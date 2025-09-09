@@ -1,3 +1,59 @@
-theme: jekyll-theme-minimal
-title: homepage
-description: Bookmark this to keep an eye on my project updates!
+title: Infinite Federation
+tagline: "Design. Deploy. Govern. Query."
+description: "Trino & Starburst consulting—from zero to production, safely and fast."
+url: "https://infinitefederation.github.io"
+baseurl: ""
+logo: /assets/img/logo.svg
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+header:
+  nav:
+    - title: "Services"
+      url: /services/
+    - title: "Playbooks"
+      url: /playbooks/
+    - title: "Engagements"
+      url: /engagements/
+    - title: "Case Studies"
+      url: /case-studies/
+    - title: "Pricing"
+      url: /pricing/
+    - title: "Team"
+      url: /team/
+    - title: "Blog"
+      url: /blog/
+    - title: "Contact"
+      url: /contact/
+
+collections:
+  case_studies:
+    output: true
+    permalink: /case-studies/:name/
+
+defaults:
+  - scope: { path: "" }
+    values:
+      layout: single
+      author_profile: false
+      toc: true
+      toc_sticky: true
+
+author:
+  name: "Infinite Federation"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/InfiniteFederation"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/company/infinite-federation"
+
+markdown: kramdown
+kramdown:
+  input: GFM
