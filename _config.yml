@@ -3,7 +3,7 @@ tagline: "Design. Deploy. Govern. Query."
 description: "Trino & Starburst consulting—from zero to production, safely and fast."
 url: "https://infinitefederation.github.io"
 baseurl: ""
-logo: /assets/img/logo.svg
+logo: /assets/img/logo.png
 
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
