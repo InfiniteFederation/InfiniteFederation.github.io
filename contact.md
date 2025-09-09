@@ -2,11 +2,11 @@
 title: Contact
 permalink: /contact/
 ---
+# Contact
 
-**Book a discovery call**  
-Tell us your goals and constraints; we’ll propose a plan with timelines and success measures.
+**Book a discovery call** — tell us your goals; we’ll propose success measures and timelines.
 
-<form action="https://formspree.io/f/yourFormId" method="POST">
+<form action="https://formspree.io/f/yourFormId" method="POST" class="form">
   <label>Your name</label>
   <input type="text" name="name" required>
   <label>Work email</label>
@@ -15,7 +15,7 @@ Tell us your goals and constraints; we’ll propose a plan with timelines and su
   <input type="text" name="company">
   <label>Message</label>
   <textarea name="message" rows="6" required></textarea>
-  <button type="submit">Send</button>
+  <button type="submit" class="btn">Send</button>
 </form>
 
-*Prefer email?* hello@infed.io
+Or email: hello@infed.io

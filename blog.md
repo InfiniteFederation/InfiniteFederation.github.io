@@ -2,5 +2,6 @@
 title: Blog
 permalink: /blog/
 ---
+# Blog
 
-Latest thinking on Trino/Starburst, Iceberg, governance, and AI-assisted SQL.
+Coming soon.

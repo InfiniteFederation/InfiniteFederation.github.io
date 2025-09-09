@@ -1,19 +1,12 @@
 ---
-title: "Starburst→Trino Migration for a Tier-1 Bank"
-client: "Global Retail Bank"
-outcomes:
-  - 35% lower infra cost via workload isolation
-  - 48% faster median dashboard latency
-  - Zero-downtime blue/green cutover
+title: "Starburst→Trino Migration for a Tier‑1 Bank"
+permalink: /case-studies/starburst-migration-bank/
 ---
-
 ## Context
-Mixed Starburst versions, rising costs, and upgrade friction.
+Mixed versions, rising costs, and upgrade friction.
 
 ## What we did
-- Gap analysis, perf baselines, and risk map
-- Blue/green dual clusters behind gateway + drain automation
-- Resource groups, spill tuning, and MERGE audit suite
+Blue/green behind gateway, drain automation, resource groups, spill tuning, MERGE audit.
 
 ## Results
-Cost down, latency down, reliability up—with auditable governance.
+35% lower infra cost, 48% faster median latency, zero‑downtime cutover.

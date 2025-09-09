@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  {%- seo -%}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script>
+    // Simple dark-mode toggle
+    function toggleTheme(){
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('if-theme', document.documentElement.classList.contains('dark') ? 'dark':'light');
+    }
+    (function(){
+      const pref = localStorage.getItem('if-theme');
+      if(pref==='dark') document.documentElement.classList.add('dark');
+    })();
+  </script>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="{{ site.logo }}" alt="Infinite Federation" class="logo"/>
+      <span>Infinite Federation</span>
+    </a>
+    <nav class="links">
+      <a href="/services/">Services</a>
+      <a href="/playbooks/">Playbooks</a>
+      <a href="/engagements/">Engagements</a>
+      <a href="/case-studies/">Case Studies</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/" class="btn small">Contact</a>
+      <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </div>
+</header>
+
+<main class="content">
+  {{ content }}
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand-line">
+        <img src="{{ site.logo }}" class="logo sm" alt=""/>
+        <strong>Infinite Federation</strong>
+      </div>
+      <p>Trino & Starburst consulting for regulated enterprises.</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="/services/">Services</a>
+      <a href="/playbooks/">Playbooks</a>
+      <a href="/engagements/">Engagements</a>
+      <a href="/case-studies/">Case Studies</a>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <a href="/blog/">Blog</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/contact/">Contact</a>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <a href="https://github.com/InfiniteFederation">GitHub</a>
+      <a href="https://www.linkedin.com/company/infinite-federation">LinkedIn</a>
+    </div>
+  </div>
+  <div class="wrap fine">© {{ site.time | date: "%Y" }} Infinite Federation · Design. Deploy. Govern. Query.</div>
+</footer>
+</body>
+</html>

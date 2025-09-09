@@ -2,37 +2,22 @@
 title: Services
 permalink: /services/
 ---
+# Services
 
-## 1) Trino/Starburst Foundations
-- Cluster sizing & topology (coord/worker, gateway, HA)
-- Catalog strategy (Iceberg, Hive, JDBC, Delta, object storage)
-- Security: SSO/SAML/OIDC, ABAC/RBAC, masking, token redaction
-- Network: mTLS, ingress, egress, service mesh
+## Foundations
+Cluster sizing, gateways, catalogs, SSO, network policy, IaC.
 
-**Deliverables:** architecture doc, infra as code (K8s YAML/Helm), runbooks.
+## Lakehouse (Iceberg)
+Polaris/Nessie, partitioning, compaction, schema evolution, CDC merges.
 
-## 2) Data Lakehouse on Iceberg
-- Polaris/Nessie/REST catalog options
-- Table formats, partitioning, compaction, vacuuming
-- Schema evolution, CDC & MERGE correctness
+## Performance & Cost
+Spill, memory, resource groups, workload isolation, benchmarks.
 
-## 3) Performance & Cost Tuning
-- Spill, exchange buffers, memory calculators
-- Resource groups, queuing, workload isolation
-- Benchmarking: TPC-DS style, perf gates in CI
+## Governance & Observability
+ABAC/RBAC, masking, redaction, lineage, audit, OTel dashboards.
 
-## 4) Governance & Observability
-- Tag-based policies, column/row filters
-- OpenMetadata integration, lineage
-- Trino events → metrics, alerts, SLOs, dashboards
+## Migrations & Upgrades
+Zero-downtime blue/green with drain automation, compat matrices.
 
-## 5) Migrations & Upgrades
-- Starburst → Trino (and vice-versa)
-- Major version upgrades with compat matrices
-- Blue/green & drain workflows
-
-## 6) AI & Text-to-SQL Enablement
-- Guardrailed SQL generation
-- Query templates, semantic layers, ACL-aware agents
-
-[Download the detailed service catalog →](/playbooks/)
+## AI & Text-to-SQL
+Guardrailed SQL generation, semantic layers, ACL-aware agents.

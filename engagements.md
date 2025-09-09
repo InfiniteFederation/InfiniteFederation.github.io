@@ -1,21 +1,14 @@
 ---
-title: Engagement Models
+title: Engagements
 permalink: /engagements/
 ---
+# Engagement Models
 
-### 1) Advisory (Lightweight)
-- Weekly architecture clinics (2–4 hrs/wk)
-- Review PRs, configs, and SLOs
+### Advisory
+Weekly architecture clinics (2–4 hrs/wk), reviews, and guidance.
 
-### 2) Build-With-You (Hands-On)
-- Co-develop infra/app changes in your repos
-- Knowledge transfer + documentation
+### Build-With-You
+Hands-on delivery in your repos with knowledge transfer.
 
-### 3) Managed Enablement
-- We run playbooks end-to-end
-- SLAs for delivery, optional on-call
-
-**Kickoff artifacts**
-- RGA report, risk heatmap
-- Architecture & ops blueprints
-- 90-day roadmap and OKRs
+### Managed Enablement
+We run playbooks end‑to‑end with clear SLAs.
