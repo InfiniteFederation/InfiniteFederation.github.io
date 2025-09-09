@@ -1,5 +1,6 @@
 ---
 title: Engagement Models
+permalink: /engagements/
 ---
 
 ### 1) Advisory (Lightweight)

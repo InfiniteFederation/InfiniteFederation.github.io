@@ -1,5 +1,6 @@
 ---
 title: Playbooks
+permalink: /playbooks/
 ---
 
 Reusable, step-by-step guides we tailor to your environment.

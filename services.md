@@ -1,5 +1,6 @@
 ---
 title: Services
+permalink: /services/
 ---
 
 ## 1) Trino/Starburst Foundations

@@ -1,5 +1,6 @@
 ---
 title: Team
+permalink: /team/
 ---
 
 We’re senior platform engineers and data architects who’ve shipped secure Trino/Starburst at bank scale (Kubernetes, Iceberg, OpenMetadata, OPA).

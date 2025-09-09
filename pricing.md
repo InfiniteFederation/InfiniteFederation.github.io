@@ -1,5 +1,6 @@
 ---
 title: Pricing
+permalink: /pricing/
 ---
 
 We keep it simple:
