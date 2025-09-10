@@ -3,7 +3,7 @@ tagline: "Design. Deploy. Govern. Query."
 description: "Trino & Starburst consulting—from zero to production, safely and fast."
 url: "https://infinitefederation.github.io"
 baseurl: ""
-logo: /assets/img/logo.svg
+logo: /assets/img/logo.png
 permalink: /:title/
 
 # Use GitHub Pages' default Jekyll (no custom theme). We'll use custom layouts/CSS.
