@@ -1,1 +1,1 @@
-# InfiniteFederation.github.io
+# infed.io

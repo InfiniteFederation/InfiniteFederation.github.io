@@ -1,7 +1,7 @@
 title: Infinite Federation
-tagline: "Design. Deploy. Govern. Query."
-description: "Trino & Starburst consulting—from zero to production, safely and fast."
-url: "https://infinitefederation.github.io"
+tagline: "Powering Data Mesh for Enterprises & Entrepreneurs"
+description: "Federated data architectures built on Trino and Starburst—turning fragmentation into one mesh, one experience."
+url: "https://infed.io"
 baseurl: ""
 logo: /assets/img/logo.png
 permalink: /:title/

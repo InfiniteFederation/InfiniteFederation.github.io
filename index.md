@@ -1,5 +1,5 @@
 ---
 layout: home
-title: "Infinite Federation — Trino & Starburst Consulting"
+title: "Infinite Federation — Data Mesh & Federated Solutions"
 permalink: /
 ---
