@@ -24,17 +24,22 @@
 <body>
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="/">
-      <img src="{{ site.logo }}" alt="Infinite Federation" class="logo"/>
-      <span>Infinite Federation</span>
-    </a>
     <nav class="links">
       <a href="/data-mesh/">Data Mesh</a>
       <a href="/services/">Services</a>
       <a href="/playbooks/">Playbooks</a>
       <a href="/engagements/">Engagements</a>
+    </nav>
+    
+    <div class="brand-centered">
+      <a href="/" class="brand">
+        <img src="{{ site.logo }}" alt="Infinite Federation" class="logo"/>
+        <span class="brand-name">Infinite Federation</span>
+      </a>
+    </div>
+    
+    <nav class="links">
       <a href="/case-studies/">Case Studies</a>
-      <a href="/pricing/">Pricing</a>
       <a href="/blog/">Blog</a>
       <a href="/contact/" class="btn small">Contact</a>
       <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">🌓</button>
