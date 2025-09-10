@@ -85,3 +85,17 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   .split-2{grid-template-columns:1fr}
   .logo-row{grid-template-columns:repeat(2,1fr)}
 }
+/* Page content wrapper */
+.content {
+  max-width: 860px;       /* keeps text nicely readable */
+  margin: 0 auto;         /* centers the content */
+  padding: 2rem 1rem;     /* space around the text */
+}
+
+.content h1, 
+.content h2, 
+.content h3 {
+  margin-top: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
