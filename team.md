@@ -6,10 +6,10 @@ permalink: /team/
 
 ## Leadership
 
-**Vivek Jain** — Director & Chief Architect  
+** # ** — Director & Chief Architect  
 *Data Mesh, Federated Architectures, Trino, Iceberg, Governance*
 
-Vivek specializes in transforming enterprise data architectures through federated mesh solutions. With deep expertise in Trino, Starburst, and modern data lakehouse technologies, he helps organizations break down data silos and build scalable, governed data platforms.
+Our staff specializes in transforming enterprise data architectures through federated mesh solutions. With deep expertise in Trino, Starburst, and modern data lakehouse technologies, he helps organizations break down data silos and build scalable, governed data platforms.
 
 **Key Expertise:**
 - Federated query engine architecture and optimization
