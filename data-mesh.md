@@ -1,8 +1,10 @@
 ---
-title: Data Mesh Solutions
-permalink: /data-mesh/
+title: Data Mesh Solutions (Archive)
+permalink: /data-mesh-overview/
 ---
 # Data Mesh: The Future of Enterprise Data Architecture
+
+Note: A newer page is now available at [Why Infinite Federation](/data-mesh/).
 
 ## Why Data Mesh Now?
 

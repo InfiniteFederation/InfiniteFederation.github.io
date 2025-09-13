@@ -44,16 +44,22 @@
       <span>Infinite Federation</span>
     </a>
     <nav class="links" aria-label="Primary">
-      <a href="/data-mesh/">Why Data Mesh</a>
-      <a href="/services/">Services</a>
-      <a href="/playbooks/">Playbooks</a>
-      <a href="/engagements/">Engagements</a>
-      <a href="/case-studies/">Case Studies</a>
-      <a href="/blog/">Resources</a>
+      {% if site.data.nav and site.data.nav.primary %}
+        {% for item in site.data.nav.primary %}
+          <a href="{{ item.href }}">{{ item.label }}</a>
+        {% endfor %}
+      {% else %}
+        <a href="/data-mesh/">Why Data Mesh</a>
+        <a href="/services/">Services</a>
+        <a href="/playbooks/">Playbooks</a>
+        <a href="/engagements/">Engagements</a>
+        <a href="/case-studies/">Case Studies</a>
+        <a href="/blog/">Resources</a>
+      {% endif %}
     </nav>
     <div class="nav-cta">
       <button class="icon-btn" aria-label="Search" onclick="openSearch()">🔎</button>
-      <a href="/pricing/" class="btn small">Start Free</a>
+      <a href="/start/" class="btn small">Start Free</a>
       <a href="/contact/" class="btn small ghost">Contact</a>
       <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">🌓</button>
     </div>
@@ -73,13 +79,19 @@
     <button class="icon-btn" aria-label="Close menu" onclick="closeDrawer()">✕</button>
   </div>
   <nav class="drawer-links">
-    <a href="/data-mesh/" onclick="closeDrawer()">Why Data Mesh</a>
-    <a href="/services/" onclick="closeDrawer()">Services</a>
-    <a href="/playbooks/" onclick="closeDrawer()">Playbooks</a>
-    <a href="/engagements/" onclick="closeDrawer()">Engagements</a>
-    <a href="/case-studies/" onclick="closeDrawer()">Case Studies</a>
-    <a href="/blog/" onclick="closeDrawer()">Resources</a>
-    <a href="/pricing/" class="btn" onclick="closeDrawer()">Start Free</a>
+    {% if site.data.nav and site.data.nav.primary %}
+      {% for item in site.data.nav.primary %}
+        <a href="{{ item.href }}" onclick="closeDrawer()">{{ item.label }}</a>
+      {% endfor %}
+    {% else %}
+      <a href="/data-mesh/" onclick="closeDrawer()">Why Data Mesh</a>
+      <a href="/services/" onclick="closeDrawer()">Services</a>
+      <a href="/playbooks/" onclick="closeDrawer()">Playbooks</a>
+      <a href="/engagements/" onclick="closeDrawer()">Engagements</a>
+      <a href="/case-studies/" onclick="closeDrawer()">Case Studies</a>
+      <a href="/blog/" onclick="closeDrawer()">Resources</a>
+    {% endif %}
+    <a href="/start/" class="btn" onclick="closeDrawer()">Start Free</a>
     <a href="/contact/" class="btn ghost" onclick="closeDrawer()">Contact</a>
   </nav>
   <div class="drawer-footer">

@@ -8,6 +8,7 @@
   --brand-2:#1ef1ff;
   --accent:#c3ff5a;
   --ring: rgba(124,92,255,0.35);
+  --border: rgba(255,255,255,0.12);
 }
 :root.light, :root:not(.dark) { /* light fallback if toggled */
   --bg: #ffffff;
@@ -19,6 +20,7 @@
   --brand-2:#00c7ff;
   --accent:#7fbf2f;
   --ring: rgba(0,199,255,0.25);
+  --border: rgba(0,0,0,0.12);
 }
 
 *{box-sizing:border-box}
@@ -157,6 +159,19 @@ body{
 .content h1,.content h2,.content h3{
   margin-top:2rem;font-weight:700;line-height:1.3
 }
+
+/* ---------- Infinite Federation page components ---------- */
+.if-hero{
+  padding:70px 0;
+  background:
+    radial-gradient(1200px 400px at 20% -10%, rgba(124,92,255,.18), transparent),
+    radial-gradient(1000px 400px at 100% 0%, rgba(30,241,255,.12), transparent)
+}
+.if-container{max-width:980px;margin:0 auto;padding:0 20px}
+.if-hero-ctas{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:12px}
+.if-button{display:inline-block;padding:.7rem 1rem;border-radius:12px;background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#0b1020;text-decoration:none;font-weight:700;box-shadow:0 8px 24px var(--ring)}
+.if-link{color:var(--accent);text-decoration:none;font-weight:600}
+.if-link:hover{text-decoration:underline}
 
 /* ---------- Footer ---------- */
 .footer{border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding:30px 0;background:rgba(0,0,0,.1)}
