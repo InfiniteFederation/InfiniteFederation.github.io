@@ -1,0 +1,7 @@
+primary:
+  - { label: "Why Infinite", href: "/data-mesh/" }
+  - { label: "Products",    href: "/products/" }
+  - { label: "Solutions",   href: "/solutions/" }
+  - { label: "Pricing",     href: "/pricing/" }
+  - { label: "Resources",   href: "/resources/" }
+  - { label: "About",       href: "/about/" }
