@@ -19,27 +19,73 @@
       const pref = localStorage.getItem('if-theme');
       if(pref==='dark') document.documentElement.classList.add('dark');
     })();
+    
+    // Mobile drawer & search modal helpers
+    function qs(sel){ return document.querySelector(sel); }
+    function openDrawer(){ qs('#drawer').classList.add('open'); qs('#overlay').classList.add('show'); }
+    function closeDrawer(){ qs('#drawer').classList.remove('open'); qs('#overlay').classList.remove('show'); }
+    function openSearch(){ qs('#searchModal').classList.add('open'); qs('#overlay').classList.add('show'); setTimeout(()=>qs('#searchInput').focus(), 50); }
+    function closeSearch(){ qs('#searchModal').classList.remove('open'); qs('#overlay').classList.remove('show'); }
+    function handleOverlay(){ closeDrawer(); closeSearch(); }
+    function handleKey(e){
+      if(e.key === '/'){ e.preventDefault(); openSearch(); }
+      if(e.key === 'Escape'){ handleOverlay(); }
+    }
+    document.addEventListener('keydown', handleKey);
+    function doSearch(ev){ ev.preventDefault(); const q = qs('#searchInput').value.trim(); if(!q) return; const url = `https://www.google.com/search?q=site:${location.host}+${encodeURIComponent(q)}`; window.open(url,'_blank'); closeSearch(); }
   </script>
 </head>
 <body>
 <header class="nav">
   <div class="wrap">
+    <button class="hamburger" aria-label="Open menu" onclick="openDrawer()">☰</button>
     <a class="brand" href="/">
       <img src="{{ site.logo }}" alt="Infinite Federation" class="logo"/>
       <span>Infinite Federation</span>
     </a>
-    <nav class="links">
-      <a href="/data-mesh/">Data Mesh</a>
+    <nav class="links" aria-label="Primary">
+      <a href="/data-mesh/">Why Data Mesh</a>
       <a href="/services/">Services</a>
       <a href="/playbooks/">Playbooks</a>
       <a href="/engagements/">Engagements</a>
       <a href="/case-studies/">Case Studies</a>
-      <a href="/blog/">Blog</a>
-      <a href="/contact/" class="btn small">Contact</a>
-      <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">🌓</button>
+      <a href="/blog/">Resources</a>
     </nav>
+    <div class="nav-cta">
+      <button class="icon-btn" aria-label="Search" onclick="openSearch()">🔎</button>
+      <a href="/pricing/" class="btn small">Start Free</a>
+      <a href="/contact/" class="btn small ghost">Contact</a>
+      <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">🌓</button>
+    </div>
   </div>
 </header>
+
+<!-- Overlay for drawer/modal -->
+<div id="overlay" class="overlay" onclick="handleOverlay()" aria-hidden="true"></div>
+
+<!-- Mobile drawer -->
+<aside id="drawer" class="drawer" aria-hidden="true" aria-label="Mobile Navigation">
+  <div class="drawer-header">
+    <div class="brand-line">
+      <img src="{{ site.logo }}" class="logo sm" alt=""/>
+      <strong>Infinite Federation</strong>
+    </div>
+    <button class="icon-btn" aria-label="Close menu" onclick="closeDrawer()">✕</button>
+  </div>
+  <nav class="drawer-links">
+    <a href="/data-mesh/" onclick="closeDrawer()">Why Data Mesh</a>
+    <a href="/services/" onclick="closeDrawer()">Services</a>
+    <a href="/playbooks/" onclick="closeDrawer()">Playbooks</a>
+    <a href="/engagements/" onclick="closeDrawer()">Engagements</a>
+    <a href="/case-studies/" onclick="closeDrawer()">Case Studies</a>
+    <a href="/blog/" onclick="closeDrawer()">Resources</a>
+    <a href="/pricing/" class="btn" onclick="closeDrawer()">Start Free</a>
+    <a href="/contact/" class="btn ghost" onclick="closeDrawer()">Contact</a>
+  </nav>
+  <div class="drawer-footer">
+    <button class="icon-btn" onclick="toggleTheme()">🌓 Theme</button>
+  </div>
+  </aside>
 
 <main class="content">
   {{ content }}
@@ -69,11 +115,39 @@
       <a href="/contact/">Contact</a>
     </div>
     <div>
+      <h4>Newsletter</h4>
+      <form class="newsletter" onsubmit="event.preventDefault(); alert('Thanks! We\'ll be in touch.');">
+        <input type="email" placeholder="Work email" aria-label="Email">
+        <button class="btn small" type="submit">Subscribe</button>
+      </form>
       <h4>Follow</h4>
       <a href="https://www.linkedin.com/company/infinite-federation">LinkedIn</a>
     </div>
   </div>
-  <div class="wrap fine">© {{ site.time | date: "%Y" }} Infinite Federation · Powering Data Mesh for Enterprises & Entrepreneurs.</div>
+  <div class="wrap fine">
+    <div class="legal">
+      <span>© {{ site.time | date: "%Y" }} Infinite Federation</span>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/contact/">Contact</a>
+    </div>
+    <div>Powering Data Mesh for Enterprises & Entrepreneurs.</div>
+  </div>
 </footer>
+
+<!-- Search modal -->
+<div id="searchModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+  <div class="modal-card">
+    <div class="modal-head">
+      <strong id="searchTitle">Search the site</strong>
+      <button class="icon-btn" aria-label="Close search" onclick="closeSearch()">✕</button>
+    </div>
+    <form class="search-form" onsubmit="doSearch(event)">
+      <input id="searchInput" type="search" placeholder="Type to search… (press / to open)" aria-label="Search">
+      <button class="btn small" type="submit">Search</button>
+    </form>
+    <p class="muted">Powered by Google site: search</p>
+  </div>
+  </div>
 </body>
 </html>
