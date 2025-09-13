@@ -1,4 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 120">
-  <rect width="560" height="120" fill="#0b1220"/>
-  <text x="20" y="75" font-size="48" fill="#7ee787" font-family="Arial, Helvetica, sans-serif">Infinite Federation</text>
+<!-- Infinite Federation – Color SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Infinite Federation logo">
+  <defs>
+    <!-- Infinity ribbon gradient -->
+    <linearGradient id="grad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="50%" stop-color="#12B3B3"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <!-- subtle inner highlight for ribbon -->
+    <linearGradient id="gloss" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="ribbonClip">
+      <path id="infinityRibbon"
+            d="M287,420
+               C180,310 223,170 380,170
+               C486,170 563,229 641,309
+               C718,389 778,450 853,450
+               C986,450 1025,321 916,240
+               C861,199 791,201 728,233
+               C672,261 628,303 583,349
+               C538,305 493,264 438,235
+               C376,202 309,200 255,239
+               C123,334 167,520 320,538
+               C423,551 503,489 583,410
+               C665,491 752,553 862,552
+               C1005,551 1091,421 1038,310
+               C988,204 842,155 716,197
+               C645,221 589,263 539,314
+               C489,263 431,221 360,197
+               C236,155 89,204 40,310
+               C-13,421 73,551 216,552
+               C324,553 409,491 492,410
+               Z"/>
+    </clipPath>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dy="8"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.25 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background is transparent by default -->
+  <!-- Infinity ribbon (filled with gradient) -->
+  <g transform="translate(100,20)">
+    <path d="M287,420
+             C180,310 223,170 380,170
+             C486,170 563,229 641,309
+             C718,389 778,450 853,450
+             C986,450 1025,321 916,240
+             C861,199 791,201 728,233
+             C672,261 628,303 583,349
+             C538,305 493,264 438,235
+             C376,202 309,200 255,239
+             C123,334 167,520 320,538
+             C423,551 503,489 583,410
+             C665,491 752,553 862,552
+             C1005,551 1091,421 1038,310
+             C988,204 842,155 716,197
+             C645,221 589,263 539,314
+             C489,263 431,221 360,197
+             C236,155 89,204 40,310
+             C-13,421 73,551 216,552
+             C324,553 409,491 492,410 Z"
+          fill="url(#grad)" filter="url(#softShadow)"/>
+
+    <!-- Gloss highlight clipped to ribbon -->
+    <rect x="-50" y="120" width="1150" height="520" fill="url(#gloss)" clip-path="url(#ribbonClip)" opacity="0.5"/>
+
+    <!-- Small white “nodes” along the ribbon -->
+    <g fill="#FFFFFF">
+      <circle cx="420" cy="330" r="12"/>
+      <circle cx="510" cy="410" r="12"/>
+      <circle cx="720" cy="360" r="12"/>
+      <circle cx="330" cy="420" r="10"/>
+    </g>
+  </g>
+
+  <!-- Text block -->
+  <g font-family="Montserrat, Poppins, Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" text-anchor="middle">
+    <text x="600" y="760" font-size="120" font-weight="800" fill="#0B0F1E" letter-spacing="4">INFINITE</text>
+    <text x="600" y="845" font-size="84"  font-weight="600" fill="#0B0F1E" letter-spacing="8">FEDERATION</text>
+  </g>
 </svg>
