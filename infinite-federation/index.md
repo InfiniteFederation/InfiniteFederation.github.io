@@ -1,7 +1,7 @@
 ---
 title: Infinite Federation
 layout: default
-permalink: /InfiniteFederation/
+permalink: /infinite-federation/
 ---
 
 <section class="if-hero">
