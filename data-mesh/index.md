@@ -95,7 +95,7 @@ permalink: /data-mesh/
 
 <section class="if-container" style="padding:8px 0 64px">
   <div class="if-hero-ctas">
-    <a href="/InfiniteFederation/" class="if-button">How it works</a>
+    <a href="/infinite-federation/" class="if-button">How it works</a>
     <a href="/contact/" class="if-link">Book a discovery call →</a>
   </div>
 </section>

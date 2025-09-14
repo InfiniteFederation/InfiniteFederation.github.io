@@ -1,5 +1,6 @@
 primary:
-  - { label: "Why Infinite", href: "/data-mesh/" }
+  - { label: "Why Infinite Federation", href: "/infinite-federation/" }
+  - { label: "Data Mesh", href: "/data-mesh/" }
   - { label: "Products",    href: "/products/" }
   - { label: "Solutions",   href: "/solutions/" }
   - { label: "Resources",   href: "/resources/" }
