@@ -586,6 +586,54 @@ WHERE EXISTS (
 
 **Understand it:** unlike a regular join, this only answers "does a match exist?" and does not return columns from `orders`.
 
+**Anti join vs LEFT JOIN**
+
+**Short answer:** `LEFT JOIN` keeps all rows from the left table; `ANTI JOIN` keeps only left rows that do not match.
+
+**Example LEFT JOIN:**
+
+```sql
+SELECT
+  c.customer_id,
+  c.customer_name,
+  o.order_id
+FROM customers c
+LEFT JOIN orders o
+  ON c.customer_id = o.customer_id
+ORDER BY c.customer_id, o.order_id;
+```
+
+**LEFT JOIN result:**
+
+| customer_id | customer_name | order_id |
+|---|---|---:|
+| 1 | Alice | 101 |
+| 1 | Alice | 102 |
+| 2 | Bob | 103 |
+| 3 | Carol | null |
+| 4 | Dan | null |
+
+**Example ANTI JOIN pattern:**
+
+```sql
+SELECT
+  c.customer_id,
+  c.customer_name
+FROM customers c
+LEFT JOIN orders o
+  ON c.customer_id = o.customer_id
+WHERE o.customer_id IS NULL;
+```
+
+**ANTI JOIN result:**
+
+| customer_id | customer_name |
+|---|---|
+| 3 | Carol |
+| 4 | Dan |
+
+**Understand it:** anti join is usually written using `LEFT JOIN ... WHERE right_key IS NULL` or `NOT EXISTS (...)`.
+
 35. What causes duplicate rows after a join?
 
 **Short answer:** Non-unique join keys.
