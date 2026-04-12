@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="700" viewBox="0 0 1400 700" role="img" aria-labelledby="title desc">
+  <title id="title">Data platform pipeline diagram</title>
+  <desc id="desc">Sources flow through ingestion to storage, processing, serving, with governance and observability across the platform.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8ee"/>
+      <stop offset="100%" stop-color="#f7e2d0"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fffdf9"/>
+      <stop offset="100%" stop-color="#fff1e1"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d96c2a"/>
+      <stop offset="100%" stop-color="#b7472e"/>
+    </linearGradient>
+    <filter id="shadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#9f633b" flood-opacity="0.16"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#c36a34"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="700" fill="url(#bg2)"/>
+
+  <g font-family="Inter, Arial, sans-serif" fill="#4a291d">
+    <text x="700" y="65" text-anchor="middle" font-size="40" font-weight="700">Modern Data Platform Flow</text>
+    <text x="700" y="105" text-anchor="middle" font-size="22">Interview-friendly architecture from sources to governed serving layer</text>
+  </g>
+
+  <g stroke="#c36a34" stroke-width="5" fill="none" marker-end="url(#arrow)">
+    <line x1="250" y1="300" x2="470" y2="300"/>
+    <line x1="650" y1="300" x2="850" y2="300"/>
+    <line x1="1030" y1="300" x2="1230" y2="300"/>
+  </g>
+
+  <g filter="url(#shadow2)" font-family="Inter, Arial, sans-serif">
+    <rect x="70" y="220" width="180" height="160" rx="22" fill="url(#box)"/>
+    <text x="160" y="270" text-anchor="middle" font-size="28" font-weight="700" fill="#4a291d">Sources</text>
+    <text x="160" y="305" text-anchor="middle" font-size="20" fill="#6d4936">Databases</text>
+    <text x="160" y="335" text-anchor="middle" font-size="20" fill="#6d4936">APIs</text>
+    <text x="160" y="365" text-anchor="middle" font-size="20" fill="#6d4936">Files / Events</text>
+
+    <rect x="470" y="220" width="180" height="160" rx="22" fill="url(#box)"/>
+    <text x="560" y="270" text-anchor="middle" font-size="28" font-weight="700" fill="#4a291d">Ingestion</text>
+    <text x="560" y="305" text-anchor="middle" font-size="20" fill="#6d4936">CDC</text>
+    <text x="560" y="335" text-anchor="middle" font-size="20" fill="#6d4936">Streaming</text>
+    <text x="560" y="365" text-anchor="middle" font-size="20" fill="#6d4936">Batch / API</text>
+
+    <rect x="850" y="220" width="180" height="160" rx="22" fill="url(#box)"/>
+    <text x="940" y="270" text-anchor="middle" font-size="28" font-weight="700" fill="#4a291d">Storage</text>
+    <text x="940" y="305" text-anchor="middle" font-size="20" fill="#6d4936">Raw Zone</text>
+    <text x="940" y="335" text-anchor="middle" font-size="20" fill="#6d4936">Lakehouse Tables</text>
+    <text x="940" y="365" text-anchor="middle" font-size="20" fill="#6d4936">Metadata</text>
+
+    <rect x="1230" y="220" width="180" height="160" rx="22" fill="url(#box)"/>
+    <text x="1320" y="270" text-anchor="middle" font-size="28" font-weight="700" fill="#4a291d">Serving</text>
+    <text x="1320" y="305" text-anchor="middle" font-size="20" fill="#6d4936">BI / SQL</text>
+    <text x="1320" y="335" text-anchor="middle" font-size="20" fill="#6d4936">APIs</text>
+    <text x="1320" y="365" text-anchor="middle" font-size="20" fill="#6d4936">Alerts / Apps</text>
+  </g>
+
+  <g filter="url(#shadow2)">
+    <rect x="440" y="470" width="520" height="120" rx="22" fill="url(#accent)"/>
+    <text x="700" y="520" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#fff7ec">Processing Layer</text>
+    <text x="700" y="560" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" fill="#fff7ec">Spark / Flink / SQL transformations, validation, enrichment, and merges</text>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="90" y="115" width="1220" height="55" rx="18" fill="#f3d8bf" stroke="#d19a72" stroke-width="3"/>
+    <text x="700" y="150" text-anchor="middle" font-size="24" font-weight="700" fill="#6b4129">Governance: catalog, lineage, access control, masking, audit logging</text>
+
+    <rect x="90" y="620" width="1220" height="55" rx="18" fill="#f3d8bf" stroke="#d19a72" stroke-width="3"/>
+    <text x="700" y="655" text-anchor="middle" font-size="24" font-weight="700" fill="#6b4129">Observability: freshness, row counts, latency, failures, schema drift, cost</text>
+  </g>
+</svg>
