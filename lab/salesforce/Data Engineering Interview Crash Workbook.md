@@ -356,13 +356,85 @@ For each one, answer with:
 
 ### B. Joins (26–50)
 
+**Sample tables used in the examples below**
+
+**customers**
+
+| customer_id | customer_name | region |
+|---|---|---|
+| 1 | Alice | EU |
+| 2 | Bob | US |
+| 3 | Carol | EU |
+| 4 | Dan | APAC |
+
+**orders**
+
+| order_id | customer_id | region | amount |
+|---|---|---|---:|
+| 101 | 1 | EU | 120 |
+| 102 | 1 | EU | 80 |
+| 103 | 2 | US | 75 |
+| 104 | 5 | US | 60 |
+
+**employees**
+
+| employee_id | employee_name | manager_id |
+|---|---|---:|
+| 10 | Eva | null |
+| 11 | Frank | 10 |
+| 12 | Grace | 10 |
+
 26. What is an INNER JOIN?
 
 **Short answer:** Returns only matching rows from both tables.
 
+**Example:**
+
+```sql
+SELECT
+  c.customer_id,
+  c.customer_name,
+  o.order_id,
+  o.amount
+FROM customers c
+INNER JOIN orders o
+  ON c.customer_id = o.customer_id;
+```
+
+**Result:**
+
+| customer_id | customer_name | order_id | amount |
+|---|---|---:|---:|
+| 1 | Alice | 101 | 120 |
+| 1 | Alice | 102 | 80 |
+| 2 | Bob | 103 | 75 |
+
 27. What is a LEFT JOIN?
 
 **Short answer:** Returns all rows from the left table and matching rows from the right.
+
+**Example:**
+
+```sql
+SELECT
+  c.customer_id,
+  c.customer_name,
+  o.order_id
+FROM customers c
+LEFT JOIN orders o
+  ON c.customer_id = o.customer_id
+ORDER BY c.customer_id, o.order_id;
+```
+
+**Result:**
+
+| customer_id | customer_name | order_id |
+|---|---|---:|
+| 1 | Alice | 101 |
+| 1 | Alice | 102 |
+| 2 | Bob | 103 |
+| 3 | Carol | null |
+| 4 | Dan | null |
 
 28. Difference between LEFT JOIN and INNER JOIN
 
@@ -376,36 +448,143 @@ For each one, answer with:
 
 **Short answer:** Returns all matching and non-matching rows from both tables.
 
+**Example:**
+
+```sql
+SELECT
+  c.customer_id,
+  c.customer_name,
+  o.order_id,
+  o.amount
+FROM customers c
+FULL OUTER JOIN orders o
+  ON c.customer_id = o.customer_id
+ORDER BY c.customer_id, o.order_id;
+```
+
+**Result:**
+
+| customer_id | customer_name | order_id | amount |
+|---|---|---:|---:|
+| 1 | Alice | 101 | 120 |
+| 1 | Alice | 102 | 80 |
+| 2 | Bob | 103 | 75 |
+| 3 | Carol | null | null |
+| 4 | Dan | null | null |
+| null | null | 104 | 60 |
+
+**Understand it:** this keeps unmatched rows from both sides.
+
 31. CROSS JOIN
 
 **Short answer:** Cartesian product of both tables.
 
+**Sample tables for cross join**
+
+**colors**
+
+| color |
+|---|
+| Red |
+| Blue |
+
+**sizes**
+
+| size |
+|---|
+| S |
+| M |
+| L |
+
+**Example:**
+
+```sql
+SELECT
+  c.color,
+  s.size
+FROM colors c
+CROSS JOIN sizes s
+ORDER BY c.color, s.size;
+```
+
+**Result:**
+
+| color | size |
+|---|---|
+| Blue | L |
+| Blue | M |
+| Blue | S |
+| Red | L |
+| Red | M |
+| Red | S |
+
+**Understand it:** every row in `colors` pairs with every row in `sizes`, so `2 x 3 = 6` rows.
+
 32. SELF JOIN
 
 **Short answer:** A table joined to itself, often for hierarchy or comparisons.
+
+**Example:**
+
+```sql
+SELECT
+  e.employee_name,
+  m.employee_name AS manager_name
+FROM employees e
+LEFT JOIN employees m
+  ON e.manager_id = m.employee_id;
+```
+
+**Result:**
+
+| employee_name | manager_name |
+|---|---|
+| Eva | null |
+| Frank | Eva |
+| Grace | Eva |
+
+**Understand it:** the same `employees` table plays two roles here:
+- `e` is the employee
+- `m` is that employee's manager
 
 33. Anti join
 
 **Short answer:** Find rows in A not in B.
 
 ```sql
-SELECT a.*
-FROM A a
-LEFT JOIN B b ON a.id = b.id
-WHERE b.id IS NULL;
+SELECT c.*
+FROM customers c
+LEFT JOIN orders o
+  ON c.customer_id = o.customer_id
+WHERE o.customer_id IS NULL;
 ```
+
+**Result:** `Carol` and `Dan`
 
 34. Semi join
 
 **Short answer:** Return rows in A that have a match in B, without bringing B columns.
 
 ```sql
-SELECT *
-FROM A a
+SELECT
+  c.customer_id,
+  c.customer_name
+FROM customers c
 WHERE EXISTS (
-  SELECT 1 FROM B b WHERE a.id = b.id
+  SELECT 1
+  FROM orders o
+  WHERE c.customer_id = o.customer_id
 );
 ```
+
+**Result:**
+
+| customer_id | customer_name |
+|---|---|
+| 1 | Alice |
+| 2 | Bob |
+
+**Understand it:** unlike a regular join, this only answers "does a match exist?" and does not return columns from `orders`.
 
 35. What causes duplicate rows after a join?
 
@@ -433,9 +612,26 @@ WHERE EXISTS (
 
 **Exercise:** Write a join on (customer_id, region) and explain why using only one column is dangerous.
 
+**Example:**
+
+```sql
+SELECT
+  c.customer_id,
+  c.customer_name,
+  o.order_id
+FROM customers c
+JOIN orders o
+  ON c.customer_id = o.customer_id
+ AND c.region = o.region;
+```
+
+**Why this matters:** if `customer_id` is reused across regions or the business key is composite, joining on only `customer_id` can create incorrect matches.
+
 41. Non-equi join
 
 **Short answer:** Join condition uses <, >, BETWEEN, or other non-equality conditions.
+
+**Mini example:** join orders to a pricing-band table using `amount BETWEEN min_amount AND max_amount`.
 
 42. Join order and performance
 
@@ -453,6 +649,17 @@ WHERE EXISTS (
 - inspect nulls
 - verify join type
 - sample exploding keys
+
+**Quick debug query:**
+
+```sql
+SELECT customer_id, COUNT(*)
+FROM orders
+GROUP BY customer_id
+HAVING COUNT(*) > 1;
+```
+
+If this returns rows, you already know that joining `customers` to `orders` can create multiple rows per customer unless that is the intended output grain.
 
 45–50. Practice prompts
 45. Find customers with no orders
