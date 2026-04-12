@@ -1863,6 +1863,96 @@ class Solution {
 
 **Java interview answer:** define the state in plain English first. For example, `dp[i]` might mean the best answer starting at index `i`, or `dp[i][j]` might mean the best answer using prefixes up to `i` and `j`.
 
+## Java Input / Output Sample Bank
+
+Use this section as your test-case sheet. After coding each problem, speak one sample input and one expected output before moving on.
+
+### Arrays And Strings Samples
+
+| Problem | Input | Output |
+|---|---|---|
+| Three Sum | `[-1,0,1,2,-1,-4]` | `[[-1,-1,2],[-1,0,1]]` |
+| Merge Sorted Arrays | `nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3` | `nums1 = [1,2,2,3,5,6]` |
+| Remove Duplicates | `[0,0,1,1,1,2,2,3,3,4]` | length `5`, prefix `[0,1,2,3,4]` |
+| Rotate Array | `nums = [1,2,3,4,5,6,7], k = 3` | `[5,6,7,1,2,3,4]` |
+| Prefix Sum Range Query | `nums = [2,4,6,8], left = 1, right = 3` | `18` |
+| Difference Array Updates | `length = 5, updates = [[1,3,2],[2,4,3],[0,2,-2]]` | `[-2,0,3,5,3]` |
+| Group Anagrams | `["eat","tea","tan","ate","nat","bat"]` | groups like `[["eat","tea","ate"],["tan","nat"],["bat"]]` |
+| Valid Anagram | `s = "anagram", t = "nagaram"` | `true` |
+| String Compression | `['a','a','b','b','c','c','c']` | length `6`, chars start as `['a','2','b','2','c','3']` |
+| Substring Search | `haystack = "sadbutsad", needle = "sad"` | `0` |
+| Word Pattern | `pattern = "abba", s = "dog cat cat dog"` | `true` |
+| Sliding Window Max | `nums = [1,3,-1,-3,5,3,6,7], k = 3` | `[3,3,5,5,6,7]` |
+| Longest Common Prefix | `["flower","flow","flight"]` | `"fl"` |
+| Roman To Integer | `"MCMXCIV"` | `1994` |
+| Integer To Roman | `1994` | `"MCMXCIV"` |
+| String To Integer | `"   -42"` | `-42` |
+| Reverse Words | `"  hello   world  "` | `"world hello"` |
+| Missing Number | `[3,0,1]` | `2` |
+| Best Time To Buy And Sell Stock | `[7,1,5,3,6,4]` | `5` |
+| Merge Intervals | `[[1,3],[2,6],[8,10],[15,18]]` | `[[1,6],[8,10],[15,18]]` |
+| Insert Interval | `intervals = [[1,3],[6,9]], new = [2,5]` | `[[1,5],[6,9]]` |
+| Meeting Rooms Overlap | `[[0,30],[5,10],[15,20]]` | `false` |
+
+### Stack, Queue, Linked List Samples
+
+| Problem | Input | Output |
+|---|---|---|
+| Min Stack | `push(-2), push(0), push(-3), getMin()` | `-3` |
+| Queue Using Two Stacks | `push(1), push(2), peek(), pop()` | `peek = 1, pop = 1` |
+| Stack Using Queues | `push(1), push(2), top(), pop()` | `top = 2, pop = 2` |
+| Merge Two Lists | `1->2->4` and `1->3->4` | `1->1->2->3->4->4` |
+| Middle Of List | `1->2->3->4->5` | node with value `3` |
+| Remove Nth From End | `1->2->3->4->5, n = 2` | `1->2->3->5` |
+| Reorder List | `1->2->3->4->5` | `1->5->2->4->3` |
+| Circular Queue | size `3`, enqueue `1,2,3,4` | last enqueue returns `false` |
+| Next Greater Element | `[2,1,2,4,3]` | `[4,2,4,-1,-1]` |
+| Daily Temperatures | `[73,74,75,71,69,72,76,73]` | `[1,1,4,2,1,1,0,0]` |
+| Largest Rectangle | `[2,1,5,6,2,3]` | `10` |
+| Trapping Rain Water | `[0,1,0,2,1,0,1,3,2,1,2,1]` | `6` |
+| Reverse Polish Notation | `["2","1","+","3","*"]` | `9` |
+
+### Trees, Graphs, DP Samples
+
+| Problem | Input | Output |
+|---|---|---|
+| Maximum Depth | tree `3,9,20,null,null,15,7` | `3` |
+| Invert Tree | root `4,2,7,1,3,6,9` | `4,7,2,9,6,3,1` |
+| Validate BST | `2,1,3` | `true` |
+| Lowest Common Ancestor | root `3,5,1,6,2,0,8`, `p=5`, `q=1` | node `3` |
+| Level Order Traversal | root `3,9,20,null,null,15,7` | `[[3],[9,20],[15,7]]` |
+| Tree Diameter | root `1,2,3,4,5` | `3` |
+| Path Sum | root `5,4,8,11,null,13,4,7,2,null,null,null,1`, target `22` | `true` |
+| Clone Graph | node `1` linked to `2` and `4` | deep copy graph with same shape |
+| Course Schedule | `numCourses = 2, prerequisites = [[1,0]]` | `true` |
+| Detect Cycle Directed Graph | `0->1, 1->2, 2->0` | `true` |
+| Connected Components | `n = 5, edges = [[0,1],[1,2],[3,4]]` | `2` |
+| Shortest Path Unweighted | edges `0-1-2`, start `0`, target `2` | `2` |
+| Bipartite Graph | `[[1,3],[0,2],[1,3],[0,2]]` | `true` |
+| Climbing Stairs | `n = 5` | `8` |
+| Longest Common Subsequence | `"abcde", "ace"` | `3` |
+| Edit Distance | `"horse", "ros"` | `3` |
+| Subsets | `[1,2]` | `[[],[1],[2],[1,2]]` |
+| Permutations | `[1,2,3]` | `6` permutations |
+| Combination Sum | `candidates = [2,3,6,7], target = 7` | `[[2,2,3],[7]]` |
+| Search Rotated Array | `[4,5,6,7,0,1,2], target = 0` | `4` |
+| Find First And Last Position | `[5,7,7,8,8,10], target = 8` | `[3,4]` |
+| Kth Largest | `nums = [3,2,1,5,6,4], k = 2` | `5` |
+| Top K Frequent | `nums = [1,1,1,2,2,3], k = 2` | `[1,2]` |
+
+### Extra Edge Cases To Rehearse
+
+| Problem | Edge Case | Expected Output |
+|---|---|---|
+| Three Sum | `[0,0,0,0]` | `[[0,0,0]]` |
+| Rotate Array | `nums = [1], k = 10` | `[1]` |
+| Valid Anagram | `"rat", "car"` | `false` |
+| Meeting Rooms | `[[7,10],[2,4]]` | `true` |
+| Remove Nth From End | `1->2, n = 2` | `2` |
+| Validate BST | `5,1,4,null,null,3,6` | `false` |
+| Course Schedule | `numCourses = 2, prerequisites = [[1,0],[0,1]]` | `false` |
+| Coin Change-style DP thinking | `coins = [2], amount = 3` | `-1` |
+
 ---
 
 ## Java Interview Reminders

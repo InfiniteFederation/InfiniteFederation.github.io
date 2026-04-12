@@ -197,6 +197,71 @@ The language does not change the algorithmic complexity. I still explain time an
 
 I would say the brute-force solution first, implement a correct baseline if needed, and then improve it step by step. Interviewers usually care more about disciplined reasoning than whether I instantly recall the most optimized named solution.
 
+## Java Mini Worked Examples
+
+Use these as quick rehearsal cards before an interview.
+
+### Example 1: Two Sum
+
+**Input:** `nums = [2,7,11,15], target = 9`  
+**Output:** `[0,1]`
+
+**How to speak it**
+
+I’ll start with brute force, which checks all pairs in `O(n^2)`. I can optimize to `O(n)` using a `HashMap<Integer, Integer>` that stores numbers I’ve already seen and their indices. For each number, I compute the complement and check whether it is already in the map.
+
+### Example 2: Valid Parentheses
+
+**Input:** `"({[]})"`  
+**Output:** `true`
+
+**How to speak it**
+
+This is a stack problem, so in Java I’ll use `ArrayDeque<Character>`. Every opening bracket gets pushed, and every closing bracket must match the most recent opening bracket. If I ever see a mismatch or the stack is empty too early, the answer is false.
+
+### Example 3: Number Of Islands
+
+**Input:**
+
+```text
+1 1 0
+1 0 0
+0 1 1
+```
+
+**Output:** `2`
+
+**How to speak it**
+
+This is graph traversal on a grid. I’ll scan every cell, and when I find land that hasn’t been visited, I’ll run DFS to mark the whole island. Each time I start a new DFS from unvisited land, I increment the island count.
+
+### Example 4: Course Schedule
+
+**Input:** `numCourses = 2, prerequisites = [[1,0]]`  
+**Output:** `true`
+
+**How to speak it**
+
+I’ll model this as a directed graph and use topological sort. In Java I’ll store adjacency lists in an `ArrayList<List<Integer>>`, track indegrees in an `int[]`, and process zero-indegree nodes with an `ArrayDeque<Integer>`.
+
+### Example 5: Coin Change
+
+**Input:** `coins = [1,2,5], amount = 11`  
+**Output:** `3`
+
+**How to speak it**
+
+This is dynamic programming. I’ll use a one-dimensional `int[] dp` where `dp[x]` means the minimum coins needed to make amount `x`. Then for each amount, I try every coin and take the minimum valid transition.
+
+### Example 6: Federated Query Platform
+
+**Scenario Input:** many source systems, need near-real-time answers, do not want to duplicate all data  
+**Expected Design Output:** query engine like Trino, metadata layer, policy enforcement, workload isolation, observability
+
+**How to speak it**
+
+I would choose federation when freshness and cross-system flexibility matter more than full ingestion. Then I would add metadata-driven governance, source-system protection, and clear workload isolation so the design is fast without becoming unsafe.
+
 ---
 
 ## 20 Timed Mock Interview Exercises For A Java Candidate

@@ -442,6 +442,42 @@ Because you are stronger in Java, your best approach is:
 - state complexity clearly
 - test with a small manual example
 
+### Core Input / Output Samples
+
+Use these when you practice speaking. Say the input, the expected output, and one sentence for why.
+
+| Problem | Input | Output | Why |
+|---|---|---|---|
+| Reverse String | `"salesforce"` | `"ecrofselas"` | reverses all characters |
+| Palindrome Check | `"A man, a plan, a canal: Panama"` | `true` | ignores punctuation and case |
+| Two Sum | `nums = [2, 7, 11, 15], target = 9` | `[0, 1]` | `2 + 7 = 9` |
+| Longest Substring | `"abcabcbb"` | `3` | longest unique substring is `"abc"` |
+| Maximum Subarray | `[-2,1,-3,4,-1,2,1,-5,4]` | `6` | best subarray is `[4,-1,2,1]` |
+| Product Except Self | `[1,2,3,4]` | `[24,12,8,6]` | multiply all values except current index |
+| Valid Parentheses | `"({[]})"` | `true` | every opener closes in correct order |
+| Reverse Linked List | `1 -> 2 -> 3 -> null` | `3 -> 2 -> 1 -> null` | links are reversed |
+| Detect Cycle | `3 -> 2 -> 0 -> -4`, tail points to node `2` | `true` | fast and slow pointers meet |
+| Inorder Traversal | root `2`, left `1`, right `3` | `[1,2,3]` | inorder for BST is sorted |
+| Number Of Islands | `[['1','1','0'],['1','0','0'],['0','1','1']]` | `2` | there are two disconnected land groups |
+| Fibonacci | `n = 7` | `13` | iterative DP avoids repeated work |
+| Coin Change | `coins = [1,2,5], amount = 11` | `3` | `5 + 5 + 1` |
+| Binary Search | `nums = [1,3,5,7,9], target = 7` | `3` | target is at index `3` |
+
+### Additional Java Practice Examples
+
+These are extra examples you can use immediately after finishing the main sample.
+
+| Problem | Extra Input | Extra Output |
+|---|---|---|
+| Two Sum | `nums = [3,2,4], target = 6` | `[1,2]` |
+| Longest Substring | `"bbbbb"` | `1` |
+| Maximum Subarray | `[5,4,-1,7,8]` | `23` |
+| Product Except Self | `[-1,1,0,-3,3]` | `[0,0,9,0,0]` |
+| Valid Parentheses | `"(]"` | `false` |
+| Number Of Islands | `[['1','1','1'],['0','1','0'],['1','1','1']]` | `1` |
+| Coin Change | `coins = [2], amount = 3` | `-1` |
+| Binary Search | `nums = [2,4,6,8], target = 5` | `-1` |
+
 ---
 
 ## Data Modeling
