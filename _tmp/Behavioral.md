@@ -12,7 +12,7 @@ CEO/CTO are busy and strategic. Behind every question she's answering five thing
 
 ---
 
-## Part 1 — VP / Hiring Manager question bank
+# Hiring Manager question bank
 
 These are the high-altitude phrasings a VP uses (different from a line manager). Each maps to a signature story.
 
