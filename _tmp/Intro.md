@@ -43,7 +43,8 @@ Most recently
 
 ---
 
-//I'm a citizen here in Dublin / and I'm looking for a senior **platform or architect** role / where I can keep building at that scale." //
+//I'm a citizen here in Dublin / and I'm looking for a senior **platform or architect** role 
+/ where I can keep building at that scale." //
 
 ---
 
