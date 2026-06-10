@@ -1,13 +1,12 @@
 # Behavioral & Hiring Manager Round — Study Doc
-### Salesforce · Software Engineering Architect · VP (CEO-1) hiring manager
-
 Consolidated question bank, model answers, and your flagship project deep-dive. Use with the main and Salesforce-specific prep guides.
 
 ---
 
 ## How to pitch this round (VP at CEO-1)
 
-She's busy and strategic. Behind every question she's answering five things: *Can I put this person in front of my leadership/customers? Will they raise the bar? Are they self-aware? Do they connect engineering to the business? Do they live the values — Trust first?*
+CEO/CTO are busy and strategic. Behind every question she's answering five things: 
+* Can I put this person in front of my leadership/customers? Will they raise the bar? Are they self-aware? Do they connect engineering to the business? Do they live the values — Trust first?*
 
 **Altitude control is the meta-skill:** lead with the outcome and the decision, stay at the "why" level, zoom into technical depth only when pulled there. Keep stories to ~90 seconds, then stop and let her drive. Say "I" for your decisions, "we" for context. Reframe internal users as **"customers."** Own failures flatly. No bad-mouthing JPM.
 
@@ -19,20 +18,6 @@ These are the high-altitude phrasings a VP uses (different from a line manager).
 
 1. **"Walk me through the most important decision you've made and how you made it."** → Federation-vs-centralization; emphasize *how* you decided (options, tradeoffs, reversible vs. one-way-door).
 2. **"Tell me about a time you were wrong, or changed your mind."** → Adoption-stall story (full answer below). The #1 VP question.
-3. **"Where have you had the most impact beyond your own code?"** → STIX/TAXII across 20+ domains; platform to 1,000+ customers across 13+ departments.
-4. **"How do you decide what *not* to do?"** → Prioritizing cost optimization (40%, $1.2M→$700K) over features to protect platform funding.
-5. **"Tell me about a time you disagreed with senior leadership."** → Disagree-with-evidence-then-commit (beats below).
-6. **"What's something about engineering you believe that others don't?"** → "Internal platforms fail on developer experience, not technology" — you've lived it.
-7. **"How do you build trust with people who don't report to you?"** → STIX/TAXII: anchor to a shared external standard, show each team its own win.
-8. **Hypothetical: "If you joined and found a messy situation, what's your first move?"** → Understand customers & constraints → find 1–2 highest-leverage problems → build trust before pushing change → sequence for reversibility.
-9. **"What kind of leader/environment brings out your best?"** → Autonomy with clear outcomes; a leader who removes obstacles and gives direct feedback. (She's assessing if she can manage you well.)
-10. **"Why this, why now, what do you want next?"** → 18+ yrs on distributed data & AI platforms; want architecture leverage *plus* hands-on building at Salesforce scale and its AI push; Trust-as-#1-value and giving-back culture you already live.
-
----
-
-## Part 2 — Model answers (built in prep)
-
-### Q: "Tell me about a time you were wrong." *(polished version)*
 Early on with the Data Mesh /<br>
 I was **wrong** / about what would drive adoption. //<br><br>
 I believed that if the architecture was **elegant** enough /<br>
@@ -68,7 +53,21 @@ I now design for **adoption** / from **day one**. //
 **Likely follow-up:** *"How did you know it was adoption and not the tech?"* → "The queries that *did* run performed fine; the drop-off was all at onboarding, before anyone ran a query."
 
 ---
+
+4. **"Where have you had the most impact beyond your own code?"** → STIX/TAXII across 20+ domains; platform to 1,000+ customers across 13+ departments.
+5. **"How do you decide what *not* to do?"** → Prioritizing cost optimization (40%, $1.2M→$700K) over features to protect platform funding.
+6. **"Tell me about a time you disagreed with senior leadership."** → Disagree-with-evidence-then-commit (beats below).
+7. **"What's something about engineering you believe that others don't?"** → "Internal platforms fail on developer experience, not technology" — you've lived it.
+8. **"How do you build trust with people who don't report to you?"** → STIX/TAXII: anchor to a shared external standard, show each team its own win.
+9. **Hypothetical: "If you joined and found a messy situation, what's your first move?"** → Understand customers & constraints → find 1–2 highest-leverage problems → build trust before pushing change → sequence for reversibility.
+10. **"What kind of leader/environment brings out your best?"** → Autonomy with clear outcomes; a leader who removes obstacles and gives direct feedback. (She's assessing if she can manage you well.)
+11. **"Why this, why now, what do you want next?"** → 18+ yrs on distributed data & AI platforms; want architecture leverage *plus* hands-on building at Salesforce scale and its AI push; Trust-as-#1-value and giving-back culture you already live.
+
 ---
+
+## Part 2 — Model answers (built in prep)
+
+
 
 ### Q: "How do you partner with senior stakeholders to support planning and decision-making in a fast-moving environment?"
 
