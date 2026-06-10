@@ -25,7 +25,7 @@ The thing I'd want you to know about me  <br>
 / not just on the whiteboard.  <br>
 
 // I personally built the hardest part  <br>
-/ — a federated **SQL-over-API engine**   <br>
+/ — a federated **API Table engine**   <br>
 / that turned 460-plus REST APIs into relational tables <br>
 / — and it became a **reusable primitive**  <br>
 / used right across the firm.  <br>
