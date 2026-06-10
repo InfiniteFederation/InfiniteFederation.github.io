@@ -61,6 +61,7 @@ Most recently
 Plain-language backup: *"It's a governance and policy layer — OPA, ABAC — that lets AI agents query data safely and act within policy."*
 
 ---
+---
 
 # "Why are you leaving JPMorgan? / Why now?"
 Target: ~40 seconds. Forward-looking and positive — never criticise JPMorgan.
@@ -89,7 +90,6 @@ So it's less about leaving  <br>
 **Notes:** *"Not running from anything"* + *"completed the arc"* inoculate against the flight-risk read. Echoes the "why Salesforce" theme (one firm → thousands of customers) — vary the wording slightly so it's not word-for-word.
 
 ---
-
 ---
 
 # "Why Salesforce?"
@@ -105,15 +105,22 @@ Target: ~45 seconds. Specific and genuine, not flattering.
 // That's a much bigger canvas for the same skill set.  <br>
 //
 
-The second reason is the **platform** angle. / My whole career has been about building **reusable primitives** other teams build on top of / — and Salesforce is fundamentally a platform company. / That's the kind of leverage I want my work to have. //
+The second reason is the **platform** angle. <br>
+/ My whole career has been about building **reusable primitives** other teams build on top of <br>
+/ — and Salesforce is fundamentally a platform company. <br>
+/ That's the kind of leverage I want my work to have. <br>
+//
 
-And honestly / the **outcome focus** appeals to me. / At my best I've translated engineering into real business results / — like taking platform cost from 1.2 million to 700K while holding reliability. / That maps to how Salesforce thinks about customer value." //
+And honestly <br>
+/ the **outcome focus** appeals to me. <br>
+/ At my best I've translated engineering into real business results <br>
+/ — like taking platform cost from 1.2 million to 700K while holding reliability. <br>
+/ That maps to how Salesforce thinks about customer value." //
 
 **Notes:** Lead with the Agentforce → *"one firm vs. thousands of customers"* hook. The cost stat doubles as your business-outcome STAR story, reinforcing the theme.
 
 ---
-
-
+---
 
 ## State your lane early
 You're **backend / platform / architecture**, not full-stack — say so, so they route you to the right interview loop.
