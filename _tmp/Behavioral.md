@@ -56,30 +56,10 @@ I now design for **adoption** / from **day one**. //
 
 4. **"Where have you had the most impact beyond your own code?"** → STIX/TAXII across 20+ domains; platform to 1,000+ customers across 13+ departments.
 5. **"How do you decide what *not* to do?"** → Prioritizing cost optimization (40%, $1.2M→$700K) over features to protect platform funding.
-6. **"Tell me about a time you disagreed with senior leadership."** → Disagree-with-evidence-then-commit (beats below).
-7. **"What's something about engineering you believe that others don't?"** → "Internal platforms fail on developer experience, not technology" — you've lived it.
-8. **"How do you build trust with people who don't report to you?"** → STIX/TAXII: anchor to a shared external standard, show each team its own win.
-9. **Hypothetical: "If you joined and found a messy situation, what's your first move?"** → Understand customers & constraints → find 1–2 highest-leverage problems → build trust before pushing change → sequence for reversibility.
-10. **"What kind of leader/environment brings out your best?"** → Autonomy with clear outcomes; a leader who removes obstacles and gives direct feedback. (She's assessing if she can manage you well.)
-11. **"Why this, why now, what do you want next?"** → 18+ yrs on distributed data & AI platforms; want architecture leverage *plus* hands-on building at Salesforce scale and its AI push; Trust-as-#1-value and giving-back culture you already live.
 
 ---
 
-## Part 2 — Model answers (built in prep)
-
-
-
-### Q: "How do you partner with senior stakeholders to support planning and decision-making in a fast-moving environment?"
-
-> At JPM I partnered directly with cyber, CTO, and CISO leadership while building our data platform — an environment where threat priorities and regulatory pressure shifted constantly, so investment decisions had to be made quickly but couldn't be wrong on the expensive ones.
->
-> My job wasn't to report status — it was to make their decisions sharper and faster. I framed every proposal in their terms: not "we'll federate queries with Trino," but "this cuts analysis time from weeks to hours for 13+ customer teams and avoids $500K in pipeline cost." For each major call I brought two or three options with explicit tradeoffs and a recommendation, so leadership could decide in minutes. When a decision was reversible I pushed us to move and learn; when it was a one-way door — like the security and isolation model — I slowed us down to get real alignment. And I surfaced risks early with a mitigation already attached, so there were no surprises.
->
-> That partnership is part of why the platform got executive backing, scaled to 1,000+ users at 99.98% reliability, and won the 2024 Business Result Award.
->
-> What I learned: the highest-leverage thing an architect can give a leader isn't an answer — it's a well-framed choice with the tradeoffs made visible.
-
-### Q: "Tell me about a disagreement with senior leadership." *(key beats)*
+6. **"Tell me about a time you disagreed with senior leadership."** → Disagree-with-evidence-then-commit (beats below).
 One that stands out is from the Cyber Data Mesh. //<br><br>
 Two senior camps wanted **opposite** things /<br>
 — the cyber analysts wanted everything in **Splunk** /<br>
@@ -110,6 +90,33 @@ Disagreeing well only earns trust / if you **commit** fully. //<br><br>
 What I took from it //<br><br>
 the senior move isn't **winning** the argument /<br>
 — it's **reframing** the binary. //
+
+---
+
+7. **"What's something about engineering you believe that others don't?"** → "Internal platforms fail on developer experience, not technology" — you've lived it.
+8. **"How do you build trust with people who don't report to you?"** → STIX/TAXII: anchor to a shared external standard, show each team its own win.
+9. **Hypothetical: "If you joined and found a messy situation, what's your first move?"** → Understand customers & constraints → find 1–2 highest-leverage problems → build trust before pushing change → sequence for reversibility.
+10. **"What kind of leader/environment brings out your best?"** → Autonomy with clear outcomes; a leader who removes obstacles and gives direct feedback. (She's assessing if she can manage you well.)
+11. **"Why this, why now, what do you want next?"** → 18+ yrs on distributed data & AI platforms; want architecture leverage *plus* hands-on building at Salesforce scale and its AI push; Trust-as-#1-value and giving-back culture you already live.
+
+---
+
+## Part 2 — Model answers (built in prep)
+
+
+
+### Q: "How do you partner with senior stakeholders to support planning and decision-making in a fast-moving environment?"
+
+> At JPM I partnered directly with cyber, CTO, and CISO leadership while building our data platform — an environment where threat priorities and regulatory pressure shifted constantly, so investment decisions had to be made quickly but couldn't be wrong on the expensive ones.
+>
+> My job wasn't to report status — it was to make their decisions sharper and faster. I framed every proposal in their terms: not "we'll federate queries with Trino," but "this cuts analysis time from weeks to hours for 13+ customer teams and avoids $500K in pipeline cost." For each major call I brought two or three options with explicit tradeoffs and a recommendation, so leadership could decide in minutes. When a decision was reversible I pushed us to move and learn; when it was a one-way door — like the security and isolation model — I slowed us down to get real alignment. And I surfaced risks early with a mitigation already attached, so there were no surprises.
+>
+> That partnership is part of why the platform got executive backing, scaled to 1,000+ users at 99.98% reliability, and won the 2024 Business Result Award.
+>
+> What I learned: the highest-leverage thing an architect can give a leader isn't an answer — it's a well-framed choice with the tradeoffs made visible.
+
+### Q: "Tell me about a disagreement with senior leadership." *(key beats)*
+
 
 ---
 
