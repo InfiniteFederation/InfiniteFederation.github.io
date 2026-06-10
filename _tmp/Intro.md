@@ -122,6 +122,74 @@ And honestly <br>
 ---
 ---
 
+The project I'm **proudest** of /<br>
+is one I **owned** end-to-end //<br><br>
+I **architected** and **shipped** JPMorgan's **first** Cyber Data Mesh //<br><br>
+the platform that became the firm's **unified access layer** for cybersecurity analytics /<br>
+— and the **foundation** for the services built across cyber operations //<br><br>
+
+The problem was concrete /<br>
+and painful //<br><br>
+Our analysts investigated threats across **fifteen-plus** systems /<br>
+— each with its own interface /<br>
+API /<br>
+and query language //<br><br>
+So before they could even **start** real analysis /<br>
+they'd burn **days** — sometimes **weeks** — just gathering and correlating data by hand //<br><br>
+We had **world-class** analysts spending their time on **plumbing** /<br>
+instead of catching threats //<br><br>
+
+My objective was simple to state /<br>
+hard to do //<br><br>
+Give them **one** SQL interface across **all** those systems //<br><br>
+No mass data replication /<br>
+— and **no** loss of governance //<br><br>
+
+The key decision I made was **virtualization** /<br>
+over **replication** //<br><br>
+Most teams wanted to centralize everything into one big data lake //<br><br>
+I **pushed back** //<br><br>
+That path buys you constant synchronization /<br>
+freshness problems /<br>
+duplicate storage /<br>
+and ownership confusion //<br><br>
+So instead /<br>
+we built a **federated** platform on Trino //<br><br>
+and I personally designed and coded a Java connector that exposed **eighty-plus** REST APIs as queryable tables //<br><br>
+SQL /<br>
+on **anything** //<br><br>
+The data stayed with its owners /<br>
+— analysts queried it **live** //<br><br>
+
+To make that **safe** and **scalable** /<br>
+I designed the data-mesh operating model //<br><br>
+metadata-driven governance /<br>
+policy enforcement through OPA /<br>
+and I led the move off legacy Hadoop /<br>
+onto a Kubernetes-native platform on AWS //<br><br>
+
+Today /<br>
+that platform serves **a thousand-plus** users across **thirteen** departments //<br><br>
+It handles **two hundred thousand** queries a day /<br>
+at **ninety-nine-point-nine-eight** percent reliability //<br><br>
+and it cut infrastructure cost from **one-point-two million** /<br>
+to **seven hundred thousand** //<br><br>
+
+But the outcome I care about most //<br><br>
+— investigations that took **weeks** /<br>
+now take **hours** //<br><br>
+That's what earned the 2024 firm-wide Business Result Award //<br><br>
+
+The biggest lesson //<br><br>
+the virtualization decision didn't just save money //<br><br>
+it eliminated an entire **class** of consistency problems /<br>
+at the **architecture** level /<br>
+— instead of forcing us to manage them operationally /<br>
+**forever** //
+
+---
+---
+
 ## State your lane early
 You're **backend / platform / architecture**, not full-stack — say so, so they route you to the right interview loop.
 
