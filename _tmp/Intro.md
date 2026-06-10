@@ -74,7 +74,7 @@ Target: ~40 seconds. Forward-looking and positive — never criticise JPMorgan.
 // I've essentially **completed the arc** of that work. //  <br>
 
 What I want next  <br>
-/ is to apply that same platform-and-AI architecture experience  <br>
+/ is to apply my engineering and architecture experience  <br>
 / at **product scale**  <br>
 / — where the thing I build ships to **thousands of customers**  <br>
 / rather than supporting **one** firm.  <br>
