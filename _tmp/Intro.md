@@ -30,7 +30,7 @@ The thing I'd want you to know about me  <br>
 / — and it became a **reusable primitive**  <br>
 / used right across the firm.  <br>
 
-// In fact, I authored a paper on it  <br>
+// In fact, I wrote a paper on it  <br>
 / and **filed a patent**.  <br>
 //
 
