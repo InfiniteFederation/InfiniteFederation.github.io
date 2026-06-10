@@ -34,9 +34,16 @@ The thing I'd want you to know about me  <br>
 
 ---
 
-Most recently / I've been building a **security and governance fabric** / so AI agents can discover data / and **act on it within policy**. // That's actually a big part of why I reached out to Salesforce / given the direction with **Agentforce**. //
+Most recently 
+/ I've been building a **security and governance fabric** 
+/ so AI agents can discover data 
+/ and **act on it within policy**. 
+// That's actually a big part of why I reached out to Salesforce 
+/ given the direction with **Agentforce**. 
 
-I'm a citizen here in Dublin / and I'm looking for a senior **platform or architect** role / where I can keep building at that scale." //
+---
+
+//I'm a citizen here in Dublin / and I'm looking for a senior **platform or architect** role / where I can keep building at that scale." //
 
 ---
 
