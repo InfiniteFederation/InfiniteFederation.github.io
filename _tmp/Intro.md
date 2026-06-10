@@ -45,12 +45,6 @@ That's a big part of why I reached out to Salesforce /<br>
 given the direction you're taking with **Agentforce adn Data360**//
 
 ---
-
-//I'm a citizen here in Dublin  <br>
-/ and I'm looking for a senior **platform or architect** role  <br>
-/ where I can keep building at that scale."  <br>
-// 
-
 ---
 
 ## Delivery cues
@@ -70,7 +64,7 @@ Target: ~40 seconds. Forward-looking and positive — never criticise JPMorgan.
 "It's a good question  <br>
 /— I've had a great decade at JPMorgan  <br>
 / and I'm not running **from** anything.  <br>
-// I took the Cyber Data Mesh from a blank page  <br>
+// I took the Cyber Data Ecosystem from a blank page  <br>
 / all the way to enterprise adoption  <br>
 / and the Business Result Award.  <br>
 // I've essentially **completed the arc** of that work. //  <br>
@@ -82,9 +76,8 @@ What I want next  <br>
 / rather than supporting **one** firm.  <br>
 // The agentic AI direction at Salesforce  <br>
 / is the most exciting version of that I've seen.  <br>
-//
-
-So it's less about leaving  <br>
+<br>
+// So it's less about leaving  <br>
 / and more about the **next right problem** for the skills I've spent a decade sharpening."  <br>
 //
 
