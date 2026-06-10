@@ -33,14 +33,36 @@ These are the high-altitude phrasings a VP uses (different from a line manager).
 ## Part 2 — Model answers (built in prep)
 
 ### Q: "Tell me about a time you were wrong." *(polished version)*
+Early on with the Data Mesh /<br>
+I was **wrong** / about what would drive adoption. //<br><br>
+I believed that if the architecture was **elegant** enough /<br>
+— federation / SQL-on-anything /<br>
+teams would **come**. //<br><br>
+The tech **worked** /<br>
+but adoption **stalled**. //<br><br>
+After the first few months /<br>
+we'd onboarded only a **fraction** of the teams I'd expected /<br>
+and I could see it **flatlining**. //<br><br>
 
-> Early on with the Data Mesh, I was wrong about what would drive adoption. I believed if the architecture was elegant enough — federation, SQL-on-anything — teams would come. The tech worked, but adoption stalled; after the first months we had only a fraction of the teams I'd expected onboarded, and I could see it flatlining.
->
-> The moment it clicked was watching a team give up because onboarding took days and they couldn't self-serve. I'd built a great engine with no on-ramp.
->
-> So I stopped treating it as an architecture problem and treated it as a product problem. I built self-service onboarding, automated the governance so access wasn't a manual bottleneck, wrote real docs and examples, and ran office hours. Adoption inflected — that's when it climbed to 1,000+ customers across 13+ departments.
->
-> What I took from it: at platform scale, the operating model and developer experience *are* the product, as much as the architecture. I now design for adoption from day one.
+The moment it **clicked** /<br>
+was watching a team **give up** /<br>
+because onboarding took **days** / and they couldn't **self-serve**. //<br><br>
+I'd built a great **engine** / with no **on-ramp**. //<br><br>
+
+So I stopped treating it as an **architecture** problem /<br>
+and started treating it as a **product** problem. //<br><br>
+I built **self-service onboarding** /<br>
+automated the governance / so access wasn't a manual **bottleneck** /<br>
+wrote real **docs and examples** /<br>
+and ran **office hours**. //<br><br>
+Adoption **inflected**. //<br><br>
+That's when it climbed to **a thousand-plus** customers / across **thirteen-plus** departments. //<br><br>
+
+What I took from it //<br><br>
+at platform scale /<br>
+the **operating model** and the **developer experience** /<br>
+are the **product** / as much as the architecture. //<br><br>
+I now design for **adoption** / from **day one**. //
 
 **Shape:** own the error flatly → concrete felt moment → specific actions → quantified recovery → forward lesson.
 **Likely follow-up:** *"How did you know it was adoption and not the tech?"* → "The queries that *did* run performed fine; the drop-off was all at onboarding, before anyone ran a query."
