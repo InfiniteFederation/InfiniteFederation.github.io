@@ -67,6 +67,9 @@ I now design for **adoption** / from **day one**. //
 **Shape:** own the error flatly → concrete felt moment → specific actions → quantified recovery → forward lesson.
 **Likely follow-up:** *"How did you know it was adoption and not the tech?"* → "The queries that *did* run performed fine; the drop-off was all at onboarding, before anyone ran a query."
 
+---
+---
+
 ### Q: "How do you partner with senior stakeholders to support planning and decision-making in a fast-moving environment?"
 
 > At JPM I partnered directly with cyber, CTO, and CISO leadership while building our data platform — an environment where threat priorities and regulatory pressure shifted constantly, so investment decisions had to be made quickly but couldn't be wrong on the expensive ones.
