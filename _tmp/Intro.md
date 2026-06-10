@@ -4,9 +4,9 @@
 
 ---
 
-"I'm a **hands-on** Staff and Principal-level engineer and architect  \n\n
-/ with 18 years   \n\n
-/ building large-scale distributed data and AI platforms / mostly across Fortune 100 banks. //  \n\n
+"I'm a **hands-on** Staff and Principal-level engineer and architect <br>
+/ with 18 years   <br>
+/ building large-scale distributed data and AI platforms / mostly across Fortune 100 banks. //  <br>
 
 For the last decade I've been at **JPMorgan Chase** 
 / as a VP in cyber engineering. 
