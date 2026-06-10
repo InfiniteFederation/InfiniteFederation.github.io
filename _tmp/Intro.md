@@ -13,10 +13,10 @@ For the last decade I've been at **JPMorgan Chase**  <br>
 / My flagship work has been architecting the firm's **first Cyber Data Mesh ecosystem**.  <br>
 / That become the foundation of our cyber security.  <br>
 / — a Kubernetes-native data platform  <br>
-// platform has grown to support more than a **thousand users**  <br>
-/ and processing over **200,000 queries a day**   <br>
+// platform is currently supporting **thousand users**  <br>
+/ and processing over **more than a millions queries a day**   <br>
 / achieving a **99.98% ** successful query completion rate.  <br>
-/ — and it won the firm's **2024 Business Result Award**. //  <br>
+/ — and I won the firm's **2024 Business Result Award**. //  <br>
 
 ---
 
