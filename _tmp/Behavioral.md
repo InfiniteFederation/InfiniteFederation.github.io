@@ -81,11 +81,36 @@ I now design for **adoption** / from **day one**. //
 > What I learned: the highest-leverage thing an architect can give a leader isn't an answer — it's a well-framed choice with the tradeoffs made visible.
 
 ### Q: "Tell me about a disagreement with senior leadership." *(key beats)*
+One that stands out is from the Cyber Data Mesh. //<br><br>
+Two senior camps wanted **opposite** things /<br>
+— the cyber analysts wanted everything in **Splunk** /<br>
+compliance wanted it all in **Cloudera** /<br>
+and leadership was leaning toward just **picking one**. //<br><br>
+I **disagreed**. //<br><br>
 
-- Stakeholders pushed to centralize all data into one warehouse.
-- I disagreed **with evidence**: laid out pipeline cost, staleness, maintenance vs. federation's source-dependency risk; built a prototype to prove pushdown made latency acceptable.
-- We landed on a hybrid — federate at source, materialize only hot/heavy datasets.
-- **Once the call was made, I became its strongest executor.** (VPs value the "commit" half — it means low friction in their org.)
+I didn't argue **opinion** /<br>
+— I argued with **evidence**. //<br><br>
+I laid the options side by side (TCS) / cost / time / and scope /<br>
+and I separated the tradeoffs people were collapsing /<br>
+— replication versus virtualization / consistency versus availability. //<br><br>
+The big objection was **latency** /<br>
+so instead of debating it / I built a **prototype** /<br>
+and proved query pushdown made it **fast enough**. //<br><br>
+
+Where we landed was **neither** side's position /<br>
+— a **hybrid** / driven by what each use case actually needed. //<br><br>
+Federate at the source / materialize only the **hot** datasets. //<br><br>
+Analysts got **speed** / compliance kept **governance** /<br>
+and we avoided an expensive full centralization. //<br><br>
+
+And the part I care about most //<br><br>
+once the call was made / I became its **strongest executor**. //<br><br>
+I didn't relitigate it / I owned the rollout. //<br><br>
+Disagreeing well only earns trust / if you **commit** fully. //<br><br>
+
+What I took from it //<br><br>
+the senior move isn't **winning** the argument /<br>
+— it's **reframing** the binary. //
 
 ---
 
