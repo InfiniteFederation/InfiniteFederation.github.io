@@ -18,6 +18,8 @@ For the last decade I've been at **JPMorgan Chase**  <br>
 / achieving a **99.98% ** successful query completion rate.  <br>
 / — and it won the firm's **2024 Business Result Award**. //  <br>
 
+---
+
 The thing I'd want you to know about me  <br>
 / is that I'm **hands-on**  <br>
 / not just on the whiteboard.  <br>
@@ -29,6 +31,8 @@ The thing I'd want you to know about me  <br>
 / used right across the firm.  <br>
 
 // In fact, I authored a paper on it / and **filed a patent**. //
+
+---
 
 Most recently / I've been building a **security and governance fabric** / so AI agents can discover data / and **act on it within policy**. // That's actually a big part of why I reached out to Salesforce / given the direction with **Agentforce**. //
 
