@@ -6,7 +6,8 @@
 
 "I'm a **hands-on** Staff and Principal-level engineer and architect <br>
 / with 18 years   <br>
-/ building large-scale distributed data and AI platforms / mostly across Fortune 100 banks. //  <br>
+I've built and delivered large-scale distributed data and AI platforms / for Fortune 100 banks across three regions /<br>
+— **India** / the **UK** / and now **Ireland**.
 
 For the last decade I've been at **JPMorgan Chase**  <br>
 / as a VP in cyber engineering.  <br>
@@ -36,12 +37,12 @@ The thing I'd want you to know about me  <br>
 
 ---
 
-Most recently 
-/ I've been building a **security and governance fabric**  <br>
-/ so AI agents can discover data  <br>
-/ and **act on it within policy**.  <br>
-// That's actually a big part of why I reached out to Salesforce  <br>
-/ given the direction with **Agentforce**.  <br>
+Most recently /<br>
+I've been building a **security and governance fabric** /<br>
+so AI agents can take action on data — **within policy** /<br>
+and with a **human in the loop**. //<br><br>
+That's a big part of why I reached out to Salesforce /<br>
+given the direction you're taking with **Agentforce adn Data360**//
 
 ---
 
