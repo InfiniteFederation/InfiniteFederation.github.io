@@ -26,25 +26,29 @@ The thing I'd want you to know about me  <br>
 
 // I personally built the hardest part  <br>
 / — a federated **SQL-over-API engine**   <br>
-/ that turned 460-plus REST APIs into relational tables   <br>
+/ that turned 460-plus REST APIs into relational tables <br>
 / — and it became a **reusable primitive**  <br>
 / used right across the firm.  <br>
 
-// In fact, I authored a paper on it / and **filed a patent**. //
+// In fact, I authored a paper on it  <br>
+/ and **filed a patent**.  <br>
+//
 
 ---
 
 Most recently 
-/ I've been building a **security and governance fabric** 
-/ so AI agents can discover data 
-/ and **act on it within policy**. 
-// That's actually a big part of why I reached out to Salesforce 
-/ given the direction with **Agentforce**. 
+/ I've been building a **security and governance fabric**  <br>
+/ so AI agents can discover data  <br>
+/ and **act on it within policy**.  <br>
+// That's actually a big part of why I reached out to Salesforce  <br>
+/ given the direction with **Agentforce**.  <br>
 
 ---
 
-//I'm a citizen here in Dublin / and I'm looking for a senior **platform or architect** role 
-/ where I can keep building at that scale." //
+//I'm a citizen here in Dublin  <br>
+/ and I'm looking for a senior **platform or architect** role  <br>
+/ where I can keep building at that scale."  <br>
+// 
 
 ---
 
@@ -58,10 +62,48 @@ Plain-language backup: *"It's a governance and policy layer — OPA, ABAC — th
 
 ---
 
+# "Why are you leaving JPMorgan? / Why now?"
+Target: ~40 seconds. Forward-looking and positive — never criticise JPMorgan.
+
+"It's a good question  <br>
+/— I've had a great decade at JPMorgan  <br>
+/ and I'm not running **from** anything.  <br>
+// I took the Cyber Data Mesh from a blank page  <br>
+/ all the way to enterprise adoption  <br>
+/ and the Business Result Award.  <br>
+// I've essentially **completed the arc** of that work. //  <br>
+
+What I want next  <br>
+/ is to apply that same platform-and-AI architecture experience  <br>
+/ at **product scale**  <br>
+/ — where the thing I build ships to **thousands of customers**  <br>
+/ rather than supporting **one** firm.  <br>
+// The agentic AI direction at Salesforce  <br>
+/ is the most exciting version of that I've seen.  <br>
+//
+
+So it's less about leaving  <br>
+/ and more about the **next right problem** for the skills I've spent a decade sharpening."  <br>
+//
+
+**Notes:** *"Not running from anything"* + *"completed the arc"* inoculate against the flight-risk read. Echoes the "why Salesforce" theme (one firm → thousands of customers) — vary the wording slightly so it's not word-for-word.
+
+---
+
+---
+
 # "Why Salesforce?"
 Target: ~45 seconds. Specific and genuine, not flattering.
 
-"A few reasons. // The honest one is that the work I've been doing most recently / — building governed, policy-bound layers so AI agents can act on data safely / — is **exactly** the problem Salesforce is now solving at scale with **Agentforce**. // I've been building that pattern inside **one** firm. / Salesforce is productizing it for **thousands** of customers. // That's a much bigger canvas for the same skill set. //
+"A few reasons. 
+// The honest one is that the work I've been doing most recently  <br>
+/ — building governed, policy-bound layers so AI agents can act on data safely  <br>
+/ — is **exactly** the problem Salesforce is now solving at scale with **Agentforce**.  <br>
+ <br>
+// I've been building that pattern inside **one** firm.  <br>
+/ Salesforce is productizing it for **thousands** of customers. <br>
+// That's a much bigger canvas for the same skill set.  <br>
+//
 
 The second reason is the **platform** angle. / My whole career has been about building **reusable primitives** other teams build on top of / — and Salesforce is fundamentally a platform company. / That's the kind of leverage I want my work to have. //
 
@@ -71,20 +113,7 @@ And honestly / the **outcome focus** appeals to me. / At my best I've translated
 
 ---
 
----
 
-# "Why are you leaving JPMorgan? / Why now?"
-Target: ~40 seconds. Forward-looking and positive — never criticise JPMorgan.
-
-"It's a good question / — I've had a great decade at JPMorgan / and I'm not running **from** anything. // I took the Cyber Data Mesh from a blank page / all the way to enterprise adoption / and the Business Result Award. // I've essentially **completed the arc** of that work. //
-
-What I want next / is to apply that same platform-and-AI architecture experience / at **product scale** / — where the thing I build ships to **thousands of customers** / rather than supporting **one** firm internally. // The agentic AI direction at Salesforce / is the most exciting version of that I've seen. //
-
-So it's less about leaving / and more about the **next right problem** for the skills I've spent a decade sharpening." //
-
-**Notes:** *"Not running from anything"* + *"completed the arc"* inoculate against the flight-risk read. Echoes the "why Salesforce" theme (one firm → thousands of customers) — vary the wording slightly so it's not word-for-word.
-
----
 
 ## State your lane early
 You're **backend / platform / architecture**, not full-stack — say so, so they route you to the right interview loop.
