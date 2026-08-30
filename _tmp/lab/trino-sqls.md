@@ -3,7 +3,7 @@ Below are copy/paste-ready SQLs (MySQL/MariaDB style) you can use to power execu
 Assumptions:
 	•	You have a timestamp column somewhere (you didn’t show one). Exec dashboards need time.
 If you don’t have it, add it (recommended):
-
+```sql
 ALTER TABLE trino_queries
   ADD COLUMN created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   ADD COLUMN finished_at TIMESTAMP NULL,
@@ -11,7 +11,7 @@ ALTER TABLE trino_queries
   ADD INDEX idx_state_created (query_state, created_at),
   ADD INDEX idx_user_created (`user`, created_at),
   ADD INDEX idx_catalog_schema_created (catalog, `schema`, created_at);
-
+```
 If you already have created_at/finished_at, just use yours.
 
 ⸻
@@ -19,7 +19,7 @@ If you already have created_at/finished_at, just use yours.
 1) Executive KPI Cards (last 24h / 7d)
 
 1A. Core KPI cards (Queries, Success rate, Active users, P95 latency)
-
+```sql
 SELECT
   COUNT(*) AS total_queries,
   SUM(query_state = 'FINISHED') AS finished_queries,
@@ -36,11 +36,11 @@ SELECT
   ) AS p95_wall_seconds
 FROM trino_queries
 WHERE created_at >= NOW() - INTERVAL 7 DAY;
-
+```
 Note: MySQL doesn’t have a native percentile_cont in many versions; the OFFSET trick works but can be heavy. For dashboards, consider pre-aggregating (see section 8).
 
 1B. Week-over-week growth (queries + active users)
-
+```sql
 SELECT
   this_week.total_queries AS this_week_queries,
   last_week.total_queries AS last_week_queries,
@@ -57,14 +57,14 @@ CROSS JOIN
    FROM trino_queries
    WHERE created_at >= CURDATE() - INTERVAL 14 DAY
      AND created_at <  CURDATE() - INTERVAL 7 DAY) last_week;
-
+```
 
 ⸻
 
 2) Adoption & Usage Trends
 
 2A. Daily queries + active users trend (time series)
-
+```sql
 SELECT
   DATE(created_at) AS day,
   COUNT(*) AS queries,
@@ -73,9 +73,9 @@ FROM trino_queries
 WHERE created_at >= CURDATE() - INTERVAL 30 DAY
 GROUP BY DATE(created_at)
 ORDER BY day;
-
+```
 2B. Top teams/domains by source (or resource group)
-
+```sql
 SELECT
   COALESCE(source, 'unknown') AS source,
   COUNT(*) AS queries,
@@ -85,9 +85,9 @@ WHERE created_at >= NOW() - INTERVAL 30 DAY
 GROUP BY COALESCE(source, 'unknown')
 ORDER BY queries DESC
 LIMIT 20;
-
+```
 2C. Top catalogs/schemas driving platform usage
-
+```sql
 SELECT
   COALESCE(catalog, 'unknown') AS catalog,
   COALESCE(`schema`, 'unknown') AS schema_name,
@@ -98,14 +98,14 @@ WHERE created_at >= NOW() - INTERVAL 30 DAY
 GROUP BY COALESCE(catalog, 'unknown'), COALESCE(`schema`, 'unknown')
 ORDER BY queries DESC
 LIMIT 30;
-
+```
 
 ⸻
 
 3) Reliability & SLA
 
 3A. Success / failure rates by day
-
+```sql
 SELECT
   DATE(created_at) AS day,
   COUNT(*) AS total,
@@ -117,9 +117,9 @@ FROM trino_queries
 WHERE created_at >= CURDATE() - INTERVAL 30 DAY
 GROUP BY DATE(created_at)
 ORDER BY day;
-
+```
 3B. Failure reasons (error_type / error_code / failure_type)
-
+```sql
 SELECT
   COALESCE(error_type, 'unknown') AS error_type,
   COALESCE(failure_type, 'unknown') AS failure_type,
@@ -131,9 +131,9 @@ WHERE created_at >= NOW() - INTERVAL 30 DAY
 GROUP BY COALESCE(error_type, 'unknown'), COALESCE(failure_type, 'unknown'), COALESCE(error_code, 'unknown')
 ORDER BY failures DESC
 LIMIT 30;
-
+```
 3C. Queueing pain (p95 queued time over time)
-
+```sql
 SELECT
   DATE(created_at) AS day,
   ROUND(AVG(queued_time_millis) / 1000, 2) AS avg_queue_s,
@@ -142,14 +142,14 @@ FROM trino_queries
 WHERE created_at >= CURDATE() - INTERVAL 30 DAY
 GROUP BY DATE(created_at)
 ORDER BY day;
-
+```
 
 ⸻
 
 4) Cost & Efficiency (best exec panel set)
 
 4A. Total “compute seconds” trend (proxy cost = cpu_time_millis)
-
+```sql
 SELECT
   DATE(created_at) AS day,
   ROUND(SUM(cpu_time_millis) / 1000, 2) AS cpu_seconds,
@@ -159,7 +159,7 @@ FROM trino_queries
 WHERE created_at >= CURDATE() - INTERVAL 30 DAY
 GROUP BY DATE(created_at)
 ORDER BY day;
-
+```
 4B. Cost by team/source (top 20)
 
 SELECT
@@ -172,9 +172,9 @@ WHERE created_at >= NOW() - INTERVAL 30 DAY
 GROUP BY COALESCE(source, 'unknown')
 ORDER BY cpu_seconds DESC
 LIMIT 20;
-
+```sql
 4C. “Waste” panel: failed + canceled CPU burn
-
+```sql
 SELECT
   DATE(created_at) AS day,
   ROUND(SUM(CASE WHEN query_state IN ('FAILED','CANCELED') THEN cpu_time_millis ELSE 0 END) / 1000, 2) AS wasted_cpu_seconds,
@@ -184,7 +184,7 @@ FROM trino_queries
 WHERE created_at >= CURDATE() - INTERVAL 30 DAY
 GROUP BY DATE(created_at)
 ORDER BY day;
-
+```
 4D. Top 20 most expensive queries (for drill-down)
 
 SELECT
