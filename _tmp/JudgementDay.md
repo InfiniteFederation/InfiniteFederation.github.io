@@ -1,4 +1,4 @@
-# 🎯 Salesforce Software Engineering Architect — 3-Day Prep Plan
+# 🎯  Software Engineering Architect — 3-Day Prep Plan
 
 **Owner:** VJ (Vivek Jain) · **Loop:** Andrew Hogg · Dave Angulo · Danielle Maves
 **Companion to:** AIM Interview Answer Bank · **Window:** 3 days
@@ -13,9 +13,9 @@ Three interviewers, three competencies, three very different rooms:
 
 | Interviewer | Competency | Risk | Your move |
 |---|---|---|---|
-| **Andrew Hogg** | Drive Innovation | Will catch hand-waving on distributed-systems / DB / cloud trade-offs | Lead with the *virtualization-over-replication* bet + how you de-risked it |
-| **Dave Angulo** | Technical Depth + Champion Customer Success | **Highest risk AND highest opportunity** — he builds your exact world | Go deep, and connect your RAG/MCP/agent layer straight to his work |
-| **Danielle Maves** | Achieve Results (30 min) | Will read rambling as weak ownership | Tight STAR, lead with the number, lean on your governance pedigree |
+| **AH** | Drive Innovation | Will catch hand-waving on distributed-systems / DB / cloud trade-offs | Lead with the *virtualization-over-replication* bet + how you de-risked it |
+| **DA** | Technical Depth + Champion Customer Success | **Highest risk AND highest opportunity** — he builds your exact world | Go deep, and connect your RAG/MCP/agent layer straight to his work |
+| **DM** | Achieve Results (30 min) | Will read rambling as weak ownership | Tight STAR, lead with the number, lean on your governance pedigree |
 
 **The one thing to internalize:** everything in your bank runs on the Cyber Data Mesh, and that's fine across a 3-person loop — *as long as you vary the angle*. Innovation cut for Andrew. Technical-depth cut for Dave. Quantified-ownership cut for Danielle. Same project, three different stories.
 
