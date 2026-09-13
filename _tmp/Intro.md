@@ -41,7 +41,7 @@ Most recently /<br>
 I've been building a **security and governance fabric** /<br>
 so AI agents can take action on data — **within policy** /<br>
 and with a **human in the loop**. //<br><br>
-That's a big part of why I reached out to Salesforce /<br>
+That's a big part of why I reached out to your organization /<br>
 given the direction you're taking with **Agentforce adn Data360**//
 
 ---
@@ -74,44 +74,44 @@ What I want next  <br>
 / at **product scale**  <br>
 / — where the thing I build ships to **thousands of customers**  <br>
 / rather than supporting **one** firm.  <br>
-// The agentic AI direction at Salesforce  <br>
+// The agentic AI direction  <br>
 / is the most exciting version of that I've seen.  <br>
 <br>
 // So it's less about leaving  <br>
 / and more about the **next right problem** for the skills I've spent a decade sharpening."  <br>
 //
 
-**Notes:** *"Not running from anything"* + *"completed the arc"* inoculate against the flight-risk read. Echoes the "why Salesforce" theme (one firm → thousands of customers) — vary the wording slightly so it's not word-for-word.
+**Notes:** *"Not running from anything"* + *"completed the arc"* inoculate against the flight-risk read. Echoes the "why this org" theme (one firm → thousands of customers) — vary the wording slightly so it's not word-for-word.
 
 ---
 ---
 
-# "Why Salesforce?"
+# "Why this company?"
 Target: ~45 seconds. Specific and genuine, not flattering.
 
 "A few reasons. 
 // The honest one is that the work I've been doing most recently  <br>
 / — building governed, policy-bound layers so AI agents can act on data safely  <br>
-/ — is **exactly** the problem Salesforce is now solving at scale with **Agentforce**.  <br>
+/ — is **exactly** the problem your organization is now solving at scale with **AI workload**.  <br>
  <br>
 // I've been building that pattern inside **one** firm.  <br>
-/ Salesforce is productizing it for **thousands** of customers. <br>
+/ Your Org is productizing it for **thousands** of customers. <br>
 // That's a much bigger canvas for the same skill set.  <br>
 //
 
 The second reason is the **platform** angle. <br>
 / My whole career has been about building **reusable primitives** other teams build on top of <br>
-/ — and Salesforce is fundamentally a platform company. <br>
+/ — and this org is fundamentally a platform company. <br>
 / That's the kind of leverage I want my work to have. <br>
 //
 
 And honestly <br>
-/ the **outcome focus** appeals to me. <br>
+/ the **execution focus** appeals to me. <br>
 / At my best I've translated engineering into real business results <br>
 / — like taking platform cost from 1.2 million to 700K while holding reliability. <br>
-/ That maps to how Salesforce thinks about customer value." //
+/ That maps to how your organization thinks about customer value." //
 
-**Notes:** Lead with the Agentforce → *"one firm vs. thousands of customers"* hook. The cost stat doubles as your business-outcome STAR story, reinforcing the theme.
+**Notes:** Lead with context → *"one firm vs. thousands of customers"* hook. The cost stat doubles as your business-outcome STAR story, reinforcing the theme.
 
 ---
 ---
