@@ -944,3 +944,282 @@ Next Step
 The immediate next step is to update the requirements, Intent specification and examples, incorporating the new Invoker model and other decisions above, then conduct a full team walkthrough to ensure all implementation streams are aligned.
 
 This meeting contains several significant architecture decisions; the biggest is the move from multiple is_* flags to an invokers + roles + invoker_intents + environment authorization model, which is worth capturing separately as an ADR/design decision.
+
+
+
+Because this meeting concerns a workplace escalation, I’ve kept the notes factual and attributed allegations/comments rather than presenting disputed statements as established facts. This format should also be suitable for your own record if you later need to reconstruct the timeline.
+
+Meeting Notes – Workplace Concerns and Management Escalation
+
+Participants: Vivek, Anthony
+Purpose: Escalation of concerns regarding management interactions, team environment, delivery/rating discussions, and impact on ability to work effectively
+Confidentiality: Personal / Management discussion
+
+⸻
+
+1. Purpose of the Discussion
+
+Vivek requested the meeting with Anthony to raise concerns that had accumulated over approximately the previous six months regarding interactions with his manager, JC.
+
+Vivek explained that he had previously tried to manage the situation himself and had deliberately avoided escalating it. However, following several incidents before and after his extended leave, he felt the situation had reached a point where he required Anthony’s support.
+
+The principal concerns raised were:
+
+* Repeated interactions perceived as aggressive or disrespectful.
+* Delivery discussions repeatedly being connected to performance ratings.
+* Concerns regarding the tone and manner in which feedback was delivered.
+* Lack of clarity/alignment around requirements followed by criticism of the team’s output.
+* Impact on motivation and ability to concentrate on technical work.
+* Concerns that similar issues may be affecting other members of the team.
+* Concern about recent employee departures and the overall team environment.
+
+⸻
+
+2. April Incident – Delivery Discussion
+
+Vivek described an incident around 13 April, shortly after the Stability Sprint and during a period involving a production/P2 issue.
+
+According to Vivek:
+
+* JC contacted him and initiated an extended discussion regarding what Vivek had delivered during the previous two sprints.
+* Vivek explained the work he had completed and subsequently maintained detailed records of his activities.
+* During the discussion, Vivek requested that the conversation be paused and resumed later.
+* Vivek stated that the conversation continued despite those requests.
+* Vivek eventually became visibly/emotionally distressed and said that he was not feeling well and needed to end the call.
+* According to Vivek, JC then turned on his camera and asked Vivek to turn on his camera as well.
+
+Vivek described this as a particularly difficult interaction and stated that it had a significant personal impact.
+
+He noted that during approximately 11 years with J.P. Morgan, he had not previously experienced workplace interactions affecting him in this manner.
+
+⸻
+
+3. Period Before Leave
+
+Vivek explained that concerns continued during the months following the April incident.
+
+He said that he and other colleagues attempted to continue delivering despite the difficult working environment.
+
+Before taking leave beginning around 27 June, Vivek stated that he attempted to consolidate the technical work and document the remaining pieces required for delivery, including integration, testing and final implementation activities.
+
+Vivek said that one reason for taking the extended break was to focus on his wellbeing and that he hoped the working situation would improve when he returned.
+
+⸻
+
+4. Return From Leave
+
+Vivek returned around 12 August.
+
+He explained that he initially expected the situation to have improved but encountered further difficult interactions shortly after returning.
+
+He also noted that several colleagues had left or were planning to leave during the wider period, which increased his concern regarding team morale and stability.
+
+Vivek stated that he believed a broader skip-level discussion with team members could provide additional perspective on the working environment.
+
+⸻
+
+5. August Smart Approval Incident
+
+Vivek described an incident in approximately mid/late August involving the Smart Approval design.
+
+Context
+
+Vivek and Varsha were working on the integration between:
+
+* Intent-based authorization; and
+* Smart Approval.
+
+The team presented its initial design to John and received requests for additional low-level technical detail.
+
+Concern raised
+
+Following the session with John, Vivek stated that JC challenged the team regarding why they had presented that particular design.
+
+JC reportedly referred to another design that had previously been discussed with Anthony, Robbie, John and JC.
+
+Vivek stated that:
+
+* He had not previously seen that design.
+* Varsha had also not seen it.
+* The design had not been available to the implementation team despite the team being expected to work against it.
+* The manner in which the issue was raised was perceived as rude/aggressive.
+
+Vivek’s concern was therefore not simply disagreement over the architecture, but that the team was criticized for not following information that they did not believe had previously been provided to them.
+
+Anthony asked questions during the meeting to establish which design and meeting were being referenced and to clarify the timeline.
+
+⸻
+
+6. Recent Delivery / Rating Discussion
+
+Vivek described another discussion occurring shortly before this meeting concerning delivery.
+
+According to Vivek, the discussion repeatedly focused on:
+
+* What had been delivered.
+* Demonstrating the value delivered.
+* Potential impact on individual ratings.
+* Potential impact on team ratings.
+
+Vivek said he counted approximately 13 references to “delivery/delivered” during the roughly hour-long discussion.
+
+Vivek stated that he attempted to explain that work was actively progressing, artifacts existed, and the team was integrating the various technical components.
+
+His concern was not being held accountable for delivery itself; rather, it was the repeated association of delivery concerns with ratings and the manner in which that message was communicated.
+
+Vivek described the interaction as demotivating and said it contributed to his concern about the overall working environment.
+
+⸻
+
+7. Concern Regarding Varsha’s Rating
+
+Vivek raised a separate concern regarding a discussion about Varsha, who was leaving the firm.
+
+According to Vivek, JC discussed potentially assigning Varsha the lowest performance rating because of perceived lack of delivery.
+
+Vivek stated that he challenged the delivery characterization by highlighting work Varsha had completed, including contributions during production/data issues and other technical incidents.
+
+Vivek also recalled a comment/question regarding whether a sufficiently low rating could affect Varsha’s ability to return to the firm in the future.
+
+Vivek raised this with Anthony because he was concerned about whether departure status was being considered in connection with performance rating.
+
+No conclusion was reached in this meeting regarding the actual rating or whether such a rating would affect future re-employment.
+
+⸻
+
+8. Concern Regarding Notice-Period Comment
+
+Vivek also recalled a conversation following discussion of another colleague’s resignation.
+
+During discussion of notice periods, a comment was reportedly made to the effect that Dublin employees had the “privilege” of a two-month notice period, contrasted with situations where people could be let go with no notice.
+
+Vivek stated that he found the comment concerning in the context of the other interactions taking place within the team.
+
+⸻
+
+9. Team Attrition and Morale
+
+Vivek raised broader concerns regarding team morale and employee retention.
+
+He noted multiple recent departures and stated that some long-tenured and technically strong colleagues had either left or were planning to leave.
+
+He expressed concern that:
+
+* Team energy had deteriorated.
+* Engineers who had previously been highly motivated appeared less engaged.
+* Repeated difficult management interactions could be contributing to the environment.
+* Other team members may have their own examples or experiences.
+
+Vivek suggested that skip-level conversations with individual team members could help management independently understand whether the concerns were isolated or more widespread.
+
+⸻
+
+10. Impact on Vivek
+
+Vivek explained that the situation was affecting him beyond individual meetings.
+
+He described:
+
+* Difficulty disengaging from conversations after work.
+* Replaying comments and interactions mentally.
+* Difficulty sleeping after particularly difficult interactions.
+* Reduced ability to focus on technical problem-solving.
+* Loss of motivation following repeated negative interactions.
+* Emotional distress following some conversations.
+
+Vivek contrasted this with his previous experience of thinking about technical ideas and solutions outside normal working hours.
+
+He stated that his concern was increasingly that his mental energy was being consumed by workplace interactions rather than engineering problems.
+
+⸻
+
+11. Confidence in Delivery and Technical Ownership
+
+Vivek emphasized that he was not seeking to avoid delivery accountability or technical ownership.
+
+He stated that:
+
+* He remains confident in his ability to deliver the Intent work.
+* He is comfortable owning complex technical problems.
+* He has previously helped build major capabilities from the ground up.
+* He is willing to continue taking responsibility for difficult engineering work.
+
+The issue raised was specifically the working environment and management relationship rather than unwillingness to deliver.
+
+⸻
+
+12. Request for Management Support
+
+Vivek asked Anthony for support in resolving the situation.
+
+He indicated that he would be open to:
+
+* Remaining responsible for his technical deliverables while the management issue is addressed; or
+* Moving to another team/reporting arrangement if that is the most appropriate solution.
+
+Vivek stated that he believed he could perform effectively elsewhere but did not believe the current situation was sustainable without intervention.
+
+He also expressed concern about the potential effect of the situation on his performance rating.
+
+⸻
+
+13. Anthony’s Response
+
+Anthony acknowledged the seriousness of the concerns.
+
+During the discussion, Anthony stated:
+
+“This is not acceptable.”
+
+He indicated that the environment described by Vivek was not how he wanted the organization to operate.
+
+Anthony asked follow-up questions to understand:
+
+* The timeline.
+* The April incident.
+* The August Smart Approval/design incident.
+* Recent delivery discussions.
+* Whether delivery/rating concerns had continued after Vivek returned from leave.
+
+Anthony told Vivek that he would address the situation and reassured him regarding his concerns.
+
+Anthony also encouraged Vivek to raise similar issues earlier in the future so that management has an opportunity to intervene before they escalate.
+
+⸻
+
+14. Key Points Recorded
+
+#	Point
+1	Vivek formally raised concerns regarding repeated management interactions over approximately six months.
+2	Concerns relate primarily to communication style, perceived disrespect/aggression, repeated delivery/rating pressure, and the resulting working environment.
+3	Vivek described a significant April interaction regarding sprint delivery.
+4	A further Smart Approval/design incident occurred after Vivek returned from leave in August.
+5	Vivek raised concern about a recent delivery discussion repeatedly connecting delivery with performance ratings.
+6	Vivek raised a separate concern regarding discussion of Varsha’s rating while she was leaving the firm.
+7	Broader team attrition and morale were raised as potential indicators that the issue may extend beyond one individual.
+8	Vivek stated that the situation was affecting concentration, sleep, motivation and ability to disengage from work interactions.
+9	Vivek reiterated confidence in his technical ability and willingness to remain accountable for delivery.
+10	Vivek requested management intervention and indicated willingness to move teams/reporting lines if necessary.
+11	Anthony stated that the situation described was not acceptable and committed to addressing it.
+12	Anthony encouraged earlier escalation of similar concerns in the future.
+
+Follow-Up Items
+
+Action	Owner
+Review the concerns and determine appropriate management intervention	Anthony
+Review the relevant incidents/timeline as necessary	Anthony
+Consider whether broader team/skip-level conversations are appropriate	Anthony
+Preserve factual notes/timeline of relevant interactions	Vivek
+Continue documenting specific incidents with dates, participants and factual wording where possible	Vivek
+Follow up regarding the working/reporting arrangement after management review	Anthony / Vivek
+Continue technical delivery while the management concern is addressed, subject to agreed arrangements	Vivek
+
+Overall Outcome
+
+Vivek formally escalated concerns regarding his working relationship with JC and explained that the cumulative effect of repeated interactions had become unsustainable for him.
+
+Anthony acknowledged the concerns, stated that the behavior/environment described was not acceptable, and indicated that he would take steps to address the situation.
+
+Vivek made clear that his objective is to return to a working environment where he can focus on engineering and delivery, and that he is open to an alternative team or reporting arrangement if required.
+
+For a sensitive matter like this, this version is deliberately written as a contemporaneous factual record—e.g. “Vivek stated/recalled/reported” rather than asserting disputed events as proven facts.
